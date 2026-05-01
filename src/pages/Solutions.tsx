@@ -252,7 +252,7 @@ function SolutionSection({ solution, alt = false }: { solution: Solution; alt?: 
               </div>
               <span className="text-primary">{solution.stage}</span>
             </div>
-            <span className="text-muted-foreground">{solution.duration} · {solution.price}</span>
+            <span className="text-muted-foreground">{solution.price}</span>
           </div>
 
           <h2 className="mt-4 text-3xl font-semibold text-foreground sm:text-4xl">

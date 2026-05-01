@@ -15,6 +15,7 @@ type Solution = {
   build: string[];
   dontDo: string[];
   ctaLabel: string;
+  painQuote?: string;
 };
 
 const advisorySprint: Solution = {
@@ -66,6 +67,8 @@ const solutions: Solution[] = [
     price: "From £40k",
     icon: Database,
     title: "Make your fleet data usable",
+    painQuote:
+      "We have terabytes of MCAP files in S3 and no one knows what's actually in them.",
     audience:
       "For teams that just deployed their first robots and don't know what to do with the data streaming back.",
     outcome:
@@ -87,6 +90,8 @@ const solutions: Solution[] = [
     price: "From £30k",
     icon: Filter,
     title: "Train on what actually matters",
+    painQuote:
+      "We're keeping 1% randomly. We know the failures we care about aren't in there.",
     audience:
       "For teams with fleet data who realize retraining on everything is infeasible and retraining on random 1% is losing the signal.",
     outcome:
@@ -106,6 +111,8 @@ const solutions: Solution[] = [
     price: "From £40k",
     icon: FlaskConical,
     title: "Know which model is better, before you ship it",
+    painQuote:
+      "We have 30 training runs and no real way to tell which one is best.",
     audience:
       "For teams running multiple training configurations who lose track of which run did what and can't systematically compare them.",
     outcome:
@@ -129,6 +136,8 @@ const solutions: Solution[] = [
     price: "From £40k",
     icon: Rocket,
     title: "Stop regressed models from reaching your fleet",
+    painQuote:
+      "Eval looked good. Production regressed anyway.",
     audience:
       "For teams whose retrained model looks better in eval but keeps regressing in production.",
     outcome:
@@ -150,6 +159,8 @@ const solutions: Solution[] = [
     price: "From £50k",
     icon: ShieldCheck,
     title: "Answer 'why did the robot do that?' in seconds",
+    painQuote:
+      "A regulator asked which model was running last Tuesday. It took us a week to answer.",
     audience:
       'For teams whose enterprise customers, compliance teams, or regulators ask "why did the robot do that?"',
     outcome:
@@ -228,6 +239,82 @@ function SolutionCard({ solution, highlighted = false }: { solution: Solution; h
   );
 }
 
+function SolutionSection({ solution, alt = false }: { solution: Solution; alt?: boolean }) {
+  const Icon = solution.icon;
+  return (
+    <section className={alt ? "bg-layer-2 py-16 lg:py-20" : "bg-layer-1 py-16 lg:py-20"}>
+      <div className="container mx-auto px-4 lg:px-8">
+        <div className="mx-auto max-w-4xl">
+          <div className="flex items-center justify-between text-xs font-medium uppercase tracking-wider">
+            <div className="flex items-center gap-3">
+              <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary/10">
+                <Icon className="h-4 w-4 text-primary" />
+              </div>
+              <span className="text-primary">{solution.stage}</span>
+            </div>
+            <span className="text-muted-foreground">{solution.duration} · {solution.price}</span>
+          </div>
+
+          <h2 className="mt-4 text-3xl font-semibold text-foreground sm:text-4xl">
+            {solution.title}
+          </h2>
+
+          {solution.painQuote && (
+            <blockquote className="mt-5 border-l-2 border-primary/40 pl-4 text-base italic text-muted-foreground">
+              "{solution.painQuote}"
+            </blockquote>
+          )}
+
+          <p className="mt-6 text-base text-foreground">
+            {solution.outcome}
+          </p>
+
+          <p className="mt-3 text-sm italic text-muted-foreground">{solution.audience}</p>
+
+          <div className="mt-8 grid gap-8 md:grid-cols-2">
+            <div>
+              <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">What we build</p>
+              <ul className="mt-3 space-y-2">
+                {solution.build.map((item) => (
+                  <li key={item} className="flex gap-2 text-sm text-muted-foreground">
+                    <span className="text-primary">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">What we don't do</p>
+              <ul className="mt-3 space-y-2">
+                {solution.dontDo.map((item) => (
+                  <li key={item} className="flex gap-2 text-sm text-muted-foreground">
+                    <span className="text-muted-foreground/60">•</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-8">
+            <Button asChild>
+              <a
+                href="https://calendly.com/achyuthsamudrala/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2"
+              >
+                {solution.ctaLabel}
+                <ArrowRight className="h-4 w-4" />
+              </a>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Solutions() {
   return (
     <Layout>
@@ -300,27 +387,31 @@ export default function Solutions() {
         </div>
       </section>
 
-      {/* Solutions grid */}
-      <section className="bg-layer-1 py-16 lg:py-20">
+      {/* Scoped engagements intro */}
+      <section className="bg-layer-1 pt-16 lg:pt-20">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="mx-auto max-w-6xl">
-            <p className="text-center text-sm font-medium uppercase tracking-wider text-primary">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-medium uppercase tracking-wider text-primary">
               Scoped engagements
             </p>
-            <p className="mx-auto mt-3 mb-10 max-w-2xl text-center text-base text-muted-foreground">
+            <p className="mx-auto mt-3 max-w-2xl text-base text-muted-foreground">
               These are probably what you'll need. Each engagement targets a specific stage of the iteration loop and ships a defined outcome - pick the one that maps to the bottleneck you most want to clear. If nothing fits cleanly, we'll scope custom.
             </p>
-            <div className="flex flex-wrap justify-center gap-6">
-              {solutions.map((solution) => (
-                <div key={solution.title} className="w-full md:w-[calc(50%-12px)]">
-                  <SolutionCard solution={solution} />
-                </div>
-              ))}
-            </div>
-            <p className="mt-12 text-center text-sm text-muted-foreground">
-              Prices shown are for typical scope. Exact scope and final pricing set in the discovery call.
-            </p>
           </div>
+        </div>
+      </section>
+
+      {/* Scoped engagements as vertical sections */}
+      {solutions.map((solution, index) => (
+        <SolutionSection key={solution.title} solution={solution} alt={index % 2 === 1} />
+      ))}
+
+      {/* Pricing footer */}
+      <section className="bg-layer-1 py-8">
+        <div className="container mx-auto px-4 lg:px-8">
+          <p className="text-center text-sm text-muted-foreground">
+            Prices shown are for typical scope. Exact scope and final pricing set in the discovery call.
+          </p>
         </div>
       </section>
 

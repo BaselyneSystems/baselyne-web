@@ -372,6 +372,20 @@ export default function Solutions() {
         </div>
       </section>
 
+      {/* Verticals */}
+      <section className="bg-layer-1 pt-16 lg:pt-20">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-medium uppercase tracking-wider text-primary">
+              Teams we work with
+            </p>
+            <p className="mt-3 text-base text-muted-foreground">
+              Warehouse robotics fleets approaching multi-site scale, autonomous trucking and AV teams, construction automation, manipulation and humanoid research labs, and foundation model teams building cross-embodiment policies. Each vertical hits the iteration loop at different points - scope reflects the specific bottleneck you're working against.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Entry point cards */}
       <section className="bg-layer-1 pt-16 lg:pt-20">
         <div className="container mx-auto px-4 lg:px-8">

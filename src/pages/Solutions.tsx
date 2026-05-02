@@ -64,7 +64,7 @@ const solutions: Solution[] = [
   {
     stage: "CAPTURE",
     duration: "6–8 weeks",
-    price: "From £40k",
+    price: "Pilot or buildout",
     icon: Database,
     title: "Make your fleet data usable",
     painQuote:
@@ -87,7 +87,7 @@ const solutions: Solution[] = [
   {
     stage: "CURATE",
     duration: "4–6 weeks",
-    price: "From £30k",
+    price: "Pilot",
     icon: Filter,
     title: "Train on what actually matters",
     painQuote:
@@ -108,7 +108,7 @@ const solutions: Solution[] = [
   {
     stage: "EXPERIMENT",
     duration: "6–8 weeks",
-    price: "From £40k",
+    price: "Pilot or buildout",
     icon: FlaskConical,
     title: "Know which model is better, before you ship it",
     painQuote:
@@ -133,7 +133,7 @@ const solutions: Solution[] = [
   {
     stage: "SHIP",
     duration: "6–8 weeks",
-    price: "From £40k",
+    price: "Pilot or buildout",
     icon: Rocket,
     title: "Stop regressed models from reaching your fleet",
     painQuote:
@@ -156,7 +156,7 @@ const solutions: Solution[] = [
   {
     stage: "TRACE",
     duration: "6–10 weeks",
-    price: "From £50k",
+    price: "Buildout",
     icon: ShieldCheck,
     title: "Answer 'why did the robot do that?' in seconds",
     painQuote:
@@ -179,6 +179,33 @@ const solutions: Solution[] = [
 ];
 
 const journeyStages = ["Capture", "Curate", "Experiment", "Ship", "Trace"];
+
+const pricingTiers = [
+  {
+    name: "Advisory sprint",
+    price: "From £5k",
+    description:
+      "Focused senior input on architecture, bottlenecks, or technical direction.",
+  },
+  {
+    name: "Diagnostic assessment",
+    price: "From £10k",
+    description:
+      "A structured map of the current infrastructure gap and prioritized fixes.",
+  },
+  {
+    name: "Pilot build",
+    price: "Typically £25k–£75k",
+    description:
+      "One focused workflow with a defined outcome and handover path.",
+  },
+  {
+    name: "Production buildout",
+    price: "Scoped after pilot",
+    description:
+      "Larger integrations across data, training, deployment, or fleet systems.",
+  },
+];
 
 function SolutionCard({ solution, highlighted = false }: { solution: Solution; highlighted?: boolean }) {
   const Icon = solution.icon;
@@ -401,6 +428,36 @@ export default function Solutions() {
         </div>
       </section>
 
+      {/* Pricing guide */}
+      <section className="bg-layer-1 py-16 lg:py-20">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="mx-auto max-w-5xl">
+            <div className="mx-auto max-w-2xl text-center">
+              <p className="text-sm font-medium uppercase tracking-wider text-primary">
+                Typical starting points
+              </p>
+              <p className="mt-3 text-base text-muted-foreground">
+                Pricing depends on scope, access, and how much of the surrounding infrastructure already exists.
+              </p>
+            </div>
+            <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              {pricingTiers.map((tier) => (
+                <Card key={tier.name} className="border-border/50 bg-card">
+                  <CardContent className="p-5">
+                    <h3 className="font-semibold text-foreground">{tier.name}</h3>
+                    <p className="mt-2 text-sm font-medium text-primary">{tier.price}</p>
+                    <p className="mt-3 text-sm text-muted-foreground">{tier.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+            <p className="mx-auto mt-6 max-w-3xl text-center text-sm text-muted-foreground">
+              Design partnerships are scoped separately when there is strong mutual learning and a path to a reusable product.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Scoped engagements as vertical sections */}
       {solutions.map((solution, index) => (
         <SolutionSection key={solution.title} solution={solution} alt={index % 2 === 1} />
@@ -414,7 +471,7 @@ export default function Solutions() {
               Don't see the right fit?
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Book a scoping call — we'll walk through your pipeline and scope whatever makes sense. Prices shown are typical; exact scope and final pricing set in the call.
+              Book a scoping call — we'll walk through your pipeline and scope whatever makes sense.
             </p>
             <Button asChild size="lg" className="mt-8">
               <a

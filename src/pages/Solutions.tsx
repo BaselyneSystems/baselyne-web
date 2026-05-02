@@ -334,7 +334,7 @@ export default function Solutions() {
               Where you are, what we build
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
-              Fixed-scope engagements for the physical AI iteration loop. Each stage is a standalone engagement - enter at the one that matches your current bottleneck, not necessarily the beginning. Custom scope available for problems that don't fit cleanly.
+              Fixed-scope engagements for the physical AI iteration loop. Each stage is a standalone engagement — enter at the one that matches your current bottleneck, not necessarily the beginning.
             </p>
             <Button asChild size="lg" className="mt-10">
               <a
@@ -380,7 +380,7 @@ export default function Solutions() {
               Teams we work with
             </p>
             <p className="mt-3 text-base text-muted-foreground">
-              Warehouse robotics fleets approaching multi-site scale, autonomous trucking and AV teams, construction automation, manipulation and humanoid research labs, and foundation model teams building cross-embodiment policies. Each vertical hits the iteration loop at different points - scope reflects the specific bottleneck you're working against.
+              Companies building AI for the physical world — across autonomous fleets (trucking, AV, last-mile), industrial automation (warehouse, construction, manufacturing, agriculture), inspection systems (energy, utilities, drones), and general-purpose robotics (humanoid, manipulation, foundation labs). Each vertical hits the iteration loop at different points; scope reflects the specific bottleneck you're working against.
             </p>
           </div>
         </div>
@@ -401,33 +401,10 @@ export default function Solutions() {
         </div>
       </section>
 
-      {/* Scoped engagements intro */}
-      <section className="bg-layer-1 pt-16 lg:pt-20">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-medium uppercase tracking-wider text-primary">
-              Scoped engagements
-            </p>
-            <p className="mx-auto mt-3 max-w-2xl text-base text-muted-foreground">
-              These are probably what you'll need. Each engagement targets a specific stage of the iteration loop and ships a defined outcome - pick the one that maps to the bottleneck you most want to clear. If nothing fits cleanly, we'll scope custom.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Scoped engagements as vertical sections */}
       {solutions.map((solution, index) => (
         <SolutionSection key={solution.title} solution={solution} alt={index % 2 === 1} />
       ))}
-
-      {/* Pricing footer */}
-      <section className="bg-layer-1 py-8">
-        <div className="container mx-auto px-4 lg:px-8">
-          <p className="text-center text-sm text-muted-foreground">
-            Prices shown are for typical scope. Exact scope and final pricing set in the discovery call.
-          </p>
-        </div>
-      </section>
 
       {/* Bottom CTA */}
       <section className="bg-layer-2 py-20 lg:py-28">
@@ -437,7 +414,7 @@ export default function Solutions() {
               Don't see the right fit?
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Some teams aren't sure which stage applies. Others have a specific problem that doesn't map cleanly to these five. Either way - book a 30-minute scoping call. We'll walk through your pipeline and scope whatever makes sense. No obligation.
+              Book a scoping call — we'll walk through your pipeline and scope whatever makes sense. Prices shown are typical; exact scope and final pricing set in the call.
             </p>
             <Button asChild size="lg" className="mt-8">
               <a

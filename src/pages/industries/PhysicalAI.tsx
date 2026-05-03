@@ -107,7 +107,7 @@ export default function PhysicalAI() {
     <Layout>
       <SEO
         title="Physical AI Infrastructure | Baselyne Systems"
-        description="Infrastructure for physical AI teams - from fleet failure to retrained model in hours, not months. Data, models, fleet. Fixed scope. Defined outcome."
+        description="Infrastructure for physical AI teams focused on safer iteration and rollout. Data, models, fleet. Fixed scope. Defined outcome."
         keywords="physical AI infrastructure, embodied AI infrastructure, physical AI consulting, sensor data pipeline, training data lineage, model evaluation, edge inference, GPU optimization, fixed-outcome AI engagements, robot data lake, autonomous systems data"
         canonical="https://baselynesystems.com/physical-ai"
         structuredData={physicalAIServiceSchema}
@@ -124,7 +124,7 @@ export default function PhysicalAI() {
               Your models are ready to deploy. Your infrastructure isn't.
             </h1>
             <p className="mt-6 text-xl font-semibold text-foreground sm:text-2xl">
-              From fleet failure to retrained model in hours - not months.
+              From fleet failure to validated policy update.
             </p>
             <p className="mt-4 text-lg text-muted-foreground">
               We build the infrastructure to close that loop. Fixed scope. Defined outcome.

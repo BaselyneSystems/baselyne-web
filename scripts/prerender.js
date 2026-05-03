@@ -32,20 +32,38 @@ async function prerender() {
 
   console.log('Preview server started on port 3000');
 
-  const browser = await puppeteer.launch({
-    headless: 'new',
-    args: ['--no-sandbox', '--disable-setuid-sandbox'],
-  });
-
   // Read the SPA shell once for use as fallback
   const spaShell = await fs.readFile(path.join(distPath, 'index.html'), 'utf-8');
   let failures = 0;
+  let browser = null;
+
+  async function launchBrowser() {
+    browser = await puppeteer.launch({
+      headless: 'new',
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    });
+    return browser;
+  }
 
   try {
+    await launchBrowser();
+
     for (const route of routes) {
       console.log(`Pre-rendering: ${route}`);
 
-      const page = await browser.newPage();
+      let page;
+      try {
+        page = await browser.newPage();
+      } catch (newPageErr) {
+        console.warn(`  [warn] browser session died before ${route}: ${newPageErr.message}`);
+        try {
+          if (browser) await browser.close();
+        } catch {
+          // ignore
+        }
+        await launchBrowser();
+        page = await browser.newPage();
+      }
 
       // Capture page-level JS errors and console errors for diagnostics
       page.on('pageerror', err => console.log(`  [pageerror] ${err.message}`));
@@ -121,7 +139,9 @@ async function prerender() {
       console.log('\nPre-rendering complete!');
     }
   } finally {
-    await browser.close();
+    if (browser) {
+      await browser.close().catch(() => {});
+    }
     server.httpServer.close();
   }
 }

@@ -8,7 +8,7 @@ const callDetails = [
   {
     icon: Clock,
     title: "30 minutes",
-    description: "A focused conversation about your infrastructure challenges and goals.",
+    description: "A focused conversation about the problem you want to solve.",
   },
   {
     icon: MessageSquare,
@@ -27,7 +27,7 @@ export default function Contact() {
     <Layout>
       <SEO
         title="Contact Baselyne Systems | Physical AI Infrastructure"
-        description="Schedule a 30-minute call to discuss your physical AI infrastructure challenges. Fixed-outcome engagements for data pipelines, training systems, inference, and deployment."
+        description="Schedule a 30-minute call to discuss a physical AI infrastructure problem."
         keywords="physical AI consulting, ML infrastructure consultation, physical AI data pipeline, inference optimization, fixed-outcome engagement"
         canonical="https://baselynesystems.com/contact"
       />
@@ -39,7 +39,7 @@ export default function Contact() {
               Start a Conversation
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
-              Every engagement begins with understanding your specific situation. Schedule a 30-minute call to discuss your infrastructure challenges and explore whether we can help.
+              Every engagement begins with understanding your specific situation. Schedule a 30-minute call to discuss the problem and explore whether we can help.
             </p>
           </div>
         </div>
@@ -128,7 +128,7 @@ export default function Contact() {
             
             <div className="mt-8 space-y-6 text-muted-foreground">
               <p>
-                We'll start by understanding your current situation: what systems you have, what you're trying to build, and what's getting in the way. This isn't a discovery call designed to qualify you as a lead-it's a genuine conversation about your infrastructure.
+                We'll start by understanding your current situation: what systems you have, what you're trying to build, and what's getting in the way. This isn't a discovery call designed to qualify you as a lead - it's a genuine conversation about your situation.
               </p>
               <p>
                 If there's an obvious area where we can help, we'll discuss what an engagement might look like. If we're not the right fit, we'll tell you directly and, where possible, point you toward resources or approaches that might help.
@@ -149,7 +149,7 @@ export default function Contact() {
               Ready to move forward?
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Book your 30-minute intro call and let's discuss how we can help with your infrastructure challenges.
+              Book your 30-minute intro call and let's discuss the problem you're working on.
             </p>
             <Button asChild size="lg" className="mt-8">
               <a
@@ -168,4 +168,3 @@ export default function Contact() {
     </Layout>
   );
 }
-

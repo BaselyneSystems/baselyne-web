@@ -23,7 +23,7 @@ export function Footer() {
               Building physical AI infrastructure?
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Schedule a 30-minute call to discuss your infrastructure challenges and how we can help.
+              Schedule a 30-minute call to discuss the problem you want to solve.
             </p>
             <Button asChild size="lg" className="mt-8">
               <a
@@ -52,7 +52,7 @@ export function Footer() {
               Accelerate autonomy.
             </p>
             <p className="mt-2 max-w-sm text-sm text-muted-foreground">
-              We take on 2–3 engagements at a time. If you're scaling a physical AI system and hitting infrastructure limits, we want to hear from you.
+              We take on 2–3 engagements at a time. If you're scaling a physical AI system and want to make iteration safer, we want to hear from you.
             </p>
             <a
               href="https://www.linkedin.com/in/achyuthsamudrala/"

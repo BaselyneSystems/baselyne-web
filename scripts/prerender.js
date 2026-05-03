@@ -107,7 +107,11 @@ async function prerender() {
         await fs.writeFile(outputPath, spaShell);
         console.warn(`  Fallback written: ${outputPath}`);
       } finally {
-        await page.close();
+        try {
+          await page.close();
+        } catch (closeErr) {
+          console.warn(`  [warn] page.close failed for ${route}: ${closeErr.message}`);
+        }
       }
     }
 

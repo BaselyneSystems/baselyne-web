@@ -27,7 +27,7 @@ const advisorySprint: Solution = {
   audience:
     "For teams who want focused senior input on a specific infrastructure question - lighter than a full Assessment, more structured than a scoping call.",
   outcome:
-    "A written decision memo with concrete recommendations and rationale, ready to share with your team or board. Includes ~12 hours of senior advisory time across the engagement.",
+    "A written decision memo with concrete recommendations and rationale, ready to share with your team or board.",
   build: [
     "3 scheduled discussion sessions of 90 minutes with your team",
     "Offline research and analysis between sessions",
@@ -72,9 +72,9 @@ const solutions: Solution[] = [
     audience:
       "For teams that just deployed their first robots and don't know what to do with the data streaming back.",
     outcome:
-      "Sensor streams from every robot become one queryable dataset your ML team can train on. No more bespoke conversion scripts. No more 'where did that episode go.'",
+      "Sensor streams from every robot become one searchable dataset your ML team can use. No more bespoke conversion scripts. No more 'where did that episode go.'",
     build: [
-      "Your fleet data, ingested in whatever format it arrives (MCAP, RLDS, LeRobot, HDF5)",
+      "Your fleet data, ingested in the format it arrives",
       "One queryable schema across your entire robot fleet",
       "Interventions, failures, and successes tagged for later retrieval",
       "Query episodes by task, outcome, source, environment - whatever matters",
@@ -95,11 +95,11 @@ const solutions: Solution[] = [
     audience:
       "For teams with fleet data who realize retraining on everything is infeasible and retraining on random 1% is losing the signal.",
     outcome:
-      "Stop retaining 1% blindly or trying to keep everything. Score episodes by failure, novelty, and difficulty; export curated slices that turn fine-tuning into signal, not noise.",
+      "Stop retaining 1% blindly or trying to keep everything. Score episodes by failure, novelty, and difficulty so retraining uses signal, not noise.",
     build: [
       "Declarative scoring policies (diversity, outcome, novelty, difficulty)",
       "Curated training set export in your preferred format",
-      "Integration with your fine-tuning workflow (Pi-0, OpenVLA, or custom)",
+      "Integration with your training workflow",
       "Reproducible slice definitions tied to model versions",
     ],
     dontDo: ["Fine-tune the model - your ML engineers run the actual training"],
@@ -141,7 +141,7 @@ const solutions: Solution[] = [
     audience:
       "For teams whose retrained model looks better in eval but keeps regressing in production.",
     outcome:
-      "Every model change goes through automated comparison gates and canary deployment. Regressions roll back automatically. Your ops team stops getting paged at 2am.",
+      "Every model change goes through automated comparison gates and staged rollout. Regressions roll back automatically.",
     build: [
       "Config-driven eval pipeline with statistical comparison",
       "Regression suite that grows from production failures",
@@ -361,7 +361,7 @@ export default function Solutions() {
               Where you are, what we build
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
-              Fixed-scope engagements for the physical AI iteration loop. Each stage is a standalone engagement — enter at the one that matches your current bottleneck, not necessarily the beginning.
+              Fixed-scope engagements for the physical AI iteration loop. Each stage is a standalone engagement - enter at the one that matches your current bottleneck, not necessarily the beginning.
             </p>
             <Button asChild size="lg" className="mt-10">
               <a
@@ -407,7 +407,7 @@ export default function Solutions() {
               Teams we work with
             </p>
             <p className="mt-3 text-base text-muted-foreground">
-              Companies building AI for the physical world — across autonomous fleets (trucking, AV, last-mile), industrial automation (warehouse, construction, manufacturing, agriculture), inspection systems (energy, utilities, drones), and general-purpose robotics (humanoid, manipulation, foundation labs). Each vertical hits the iteration loop at different points; scope reflects the specific bottleneck you're working against.
+              Companies building AI for the physical world - across autonomous fleets (trucking, AV, last-mile), industrial automation (warehouse, construction, manufacturing, agriculture), inspection systems (energy, utilities, drones), and general-purpose robotics (humanoid, manipulation, foundation labs). Each vertical hits the iteration loop at different points; scope reflects the specific bottleneck you're working against.
             </p>
           </div>
         </div>

@@ -102,7 +102,7 @@ export default function About() {
     <Layout>
       <SEO
         title="About & Approach | Baselyne Systems"
-        description="Founder-led physical AI infrastructure firm improving iteration velocity for teams deploying autonomy. Fixed-outcome engagements, solo-founded, with experience from Meta, Alphabet, and Booking.com."
+        description="Founder-led physical AI infrastructure firm focused on safer iteration and rollout for teams deploying autonomy. Fixed-outcome engagements, with experience from Meta, Alphabet, and Booking.com."
         keywords="AI infrastructure consulting, physical AI consulting, fixed-outcome engagements, ML infrastructure, data engineering"
         canonical="https://baselynesystems.com/about"
         structuredData={organizationSchema}
@@ -119,7 +119,7 @@ export default function About() {
               About Baselyne Systems
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
-              Improving iteration velocity for teams deploying physical AI. A founder-led infrastructure firm that takes on hard engineering problems and delivers defined outcomes in fixed timelines.
+              Helping physical AI teams shorten the path from field failure to validated update. A founder-led infrastructure firm that takes on hard engineering problems and delivers defined outcomes in fixed timelines.
             </p>
           </div>
         </div>
@@ -137,13 +137,13 @@ export default function About() {
             </h2>
             <div className="mt-8 space-y-6 text-muted-foreground">
               <p>
-                Baselyne Systems builds the infrastructure that closes the iteration loop for physical AI teams - the gap between a production failure and the next retrained model. We scope every engagement around a specific, measurable outcome - compressing retrain cycles, automating fleet curation, building evaluation gates - and deliver it in a fixed timeline at a fixed price.
+                Baselyne Systems builds the infrastructure that closes the iteration loop for physical AI teams - the gap between a production failure and the next validated update. We scope every engagement around a specific, measurable outcome - faster evaluation, cleaner failure data, safer rollout - and deliver it in a fixed timeline at a fixed price.
               </p>
               <p>
                 The founder has built infrastructure at Meta, Isomorphic Labs (Alphabet), and Booking.com - petabyte-scale data platforms, systems handling 100M+ queries per second, ML observability, and GDPR compliance at scale.
               </p>
               <p>
-                We apply that experience to teams building physical AI systems - robotics, autonomous systems, and embodied AI - helping them compress the iteration loop from months to hours. Fixed outcome. Defined handover. Your team operates and extends what we built.
+                We apply that experience to teams building physical AI systems - robotics, autonomous systems, and embodied AI - helping them move from incident to validated change with less manual work. Fixed outcome. Defined handover. Your team operates and extends what we built.
               </p>
               <Link
                 to="/solutions"

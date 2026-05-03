@@ -79,7 +79,7 @@ export const organizationSchema = {
   url: "https://baselynesystems.com",
   logo: "https://baselynesystems.com/logo.png",
   description:
-    "AI infrastructure and MLOps consulting firm helping data and ML teams move AI from experimentation into production.",
+    "Physical AI infrastructure firm focused on safer iteration and rollout for autonomy teams.",
   sameAs: ["https://www.linkedin.com/in/achyuthsamudrala/"],
   contactPoint: {
     "@type": "ContactPoint",
@@ -95,7 +95,7 @@ export const professionalServiceSchema = {
   name: "Baselyne Systems",
   url: "https://baselynesystems.com",
   description:
-    "Expert AI infrastructure, MLOps, and data infrastructure consulting services for data and ML teams.",
+    "Physical AI infrastructure and fixed-outcome consulting for autonomy teams.",
   priceRange: "$$$",
   areaServed: "Worldwide",
   hasOfferCatalog: {
@@ -108,7 +108,7 @@ export const professionalServiceSchema = {
           "@type": "Service",
           name: "AI Infrastructure Consulting",
           description:
-            "Scalable compute orchestration, cost attribution, and security for GPU-intensive AI workloads.",
+            "Infrastructure strategy and implementation for autonomy teams.",
         },
       },
       {
@@ -117,7 +117,7 @@ export const professionalServiceSchema = {
           "@type": "Service",
           name: "MLOps Consulting",
           description:
-            "Model versioning, deployment infrastructure, and production monitoring for ML systems.",
+            "Model lifecycle, evaluation, and rollout infrastructure.",
         },
       },
       {
@@ -126,7 +126,7 @@ export const professionalServiceSchema = {
           "@type": "Service",
           name: "Data Infrastructure Consulting",
           description:
-            "Lakehouse architecture, pipeline orchestration, and data governance for production systems.",
+            "Data capture, curation, and traceability for physical AI systems.",
         },
       },
     ],
@@ -188,7 +188,7 @@ export const physicalAIServiceSchema = {
     url: "https://baselynesystems.com",
   },
   description:
-    "Infrastructure for physical AI across the full lifecycle - edge data capture, sensor data lakes, training pipelines, evaluation gates, fleet deployment, and compliance for robotics, autonomous systems, embodied agents, and world models.",
+    "Infrastructure for physical AI teams focused on validation, rollout, and safer updates.",
   serviceType: "Consulting",
   areaServed: "Worldwide",
   url: "https://baselynesystems.com/physical-ai",

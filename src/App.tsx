@@ -11,7 +11,6 @@ import CDCPlatform from "./pages/blog/CDCPlatform";
 import Bulkhead from "./pages/blog/Bulkhead";
 import GateKeeper from "./pages/blog/GateKeeper";
 import RobotDataLake from "./pages/blog/RobotDataLake";
-import EdgeSync from "./pages/blog/EdgeSync";
 import TrainingPipeline from "./pages/blog/TrainingPipeline";
 import PhysicalAI from "./pages/industries/PhysicalAI";
 import Solutions from "./pages/Solutions";
@@ -37,7 +36,6 @@ const App = () => (
           <Route path="/blog/bulkhead" element={<Bulkhead />} />
           <Route path="/blog/gatekeeper" element={<GateKeeper />} />
           <Route path="/blog/robot-data-lake" element={<RobotDataLake />} />
-          <Route path="/blog/edge-sync" element={<EdgeSync />} />
           <Route path="/blog/training-pipeline" element={<TrainingPipeline />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

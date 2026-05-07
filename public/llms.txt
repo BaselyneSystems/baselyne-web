@@ -63,10 +63,6 @@ URL: https://baselynesystems.com/blog/gatekeeper
 
 ### AI Infrastructure
 
-#### Edge Sync: Offline-First Data Sync (April 2026)
-Offline-first sync daemon with intermittent connectivity. Priority scoring by training value, bounded buffer eviction, resumable chunked upload, two-phase completion. 100% failure data survival while dropping half of all episodes. 9 identified race conditions with specific mitigations.
-URL: https://baselynesystems.com/blog/edge-sync
-
 #### Bulkhead: Defense in Depth for Autonomous AI Agents (March 2026)
 Four independent enforcement layers for AI agent governance: compiled guardrails evaluated in 184ns, kernel-level iptables egress, append-only audit trail, and non-blocking human-in-the-loop escalation.
 URL: https://baselynesystems.com/blog/bulkhead

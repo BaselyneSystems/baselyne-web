@@ -75,16 +75,6 @@ const sections: { category: string; description: string; posts: Post[] }[] = [
     description: "Edge data management, agent governance, and production AI systems.",
     posts: [
       {
-        title: "Edge Sync: Offline-First Data Sync for Field Robots",
-        subtitle: "Priority scoring, bounded eviction, and resumable upload over intermittent connectivity",
-        date: "April 2026",
-        tags: ["Case Study", "Physical AI"],
-        excerpt:
-          "How we built an offline-first sync daemon that preserves 100% of failure data while dropping half of all episodes - with priority scoring, bounded buffer eviction, and resumable upload over intermittent connectivity.",
-        href: "/blog/edge-sync",
-        github: "",
-      },
-      {
         title: "Bulkhead: Defense in Depth for Autonomous AI Agents",
         subtitle: "How we enforce AI agent guardrails at the infrastructure level, not the prompt level",
         date: "March 2026",

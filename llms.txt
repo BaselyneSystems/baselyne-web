@@ -37,6 +37,11 @@ Calendly: https://calendly.com/achyuthsamudrala/30min
 Email: achyuth@baselynesystems.com
 Website: https://baselynesystems.com/contact
 
+## Newsletter
+
+Physical AI Infra Newsletter — monthly writing on physical AI infrastructure, what's required today, where existing tools fall short, and how the stack might evolve.
+Substack: https://physicalaiinfra.substack.com/
+
 ## Blog
 
 Technical case studies on infrastructure built by Baselyne.

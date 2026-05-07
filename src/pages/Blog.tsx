@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowRight, Github } from "lucide-react";
+import { ArrowRight, Github, Newspaper } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
@@ -209,6 +209,38 @@ export default function Blog() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Newsletter subscribe */}
+      <section className="bg-layer-2 py-16 lg:py-20">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="mx-auto max-w-2xl">
+            <Card className="border-primary/20 bg-gradient-to-b from-card to-accent/20">
+              <CardContent className="flex flex-col items-center p-8 text-center lg:p-10">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                  <Newspaper className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="mt-5 text-xl font-semibold text-foreground">
+                  Physical AI Infra Newsletter
+                </h3>
+                <p className="mt-2 text-muted-foreground">
+                  Monthly writing on physical AI infrastructure — what's required today, where existing tools fall short, and how the stack might evolve.
+                </p>
+                <Button asChild size="lg" className="mt-6">
+                  <a
+                    href="https://physicalaiinfra.substack.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2"
+                  >
+                    Subscribe on Substack
+                    <ArrowRight className="h-4 w-4" />
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

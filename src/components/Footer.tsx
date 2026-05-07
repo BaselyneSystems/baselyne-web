@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Linkedin, Mail, Newspaper } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/baselyne-logo.jpg";
 
@@ -69,6 +69,15 @@ export function Footer() {
             >
               <Mail className="h-5 w-5" />
               <span>achyuth@baselynesystems.com</span>
+            </a>
+            <a
+              href="https://physicalaiinfra.substack.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-2 flex items-center gap-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
+            >
+              <Newspaper className="h-5 w-5" />
+              <span>Physical AI Infra Newsletter</span>
             </a>
           </div>
 

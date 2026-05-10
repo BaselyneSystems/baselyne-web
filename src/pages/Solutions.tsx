@@ -205,6 +205,12 @@ const pricingTiers = [
     description:
       "Larger integrations across data, training, deployment, or fleet systems.",
   },
+  {
+    name: "Operate",
+    price: "From £6k / month",
+    description:
+      "Continuous engineering to run and evolve the pipeline as your fleet, models, and team grow.",
+  },
 ];
 
 function SolutionCard({ solution, highlighted = false }: { solution: Solution; highlighted?: boolean }) {
@@ -440,7 +446,7 @@ export default function Solutions() {
                 Pricing depends on scope, access, and how much of the surrounding infrastructure already exists.
               </p>
             </div>
-            <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
               {pricingTiers.map((tier) => (
                 <Card key={tier.name} className="border-border/50 bg-card">
                   <CardContent className="p-5">

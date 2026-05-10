@@ -1,4 +1,4 @@
-import { ArrowRight, Building2, CheckCircle2, Database, FileText, Linkedin, Mail, Search, Shield, Target, Users, Wrench, Zap } from "lucide-react";
+import { ArrowRight, Building2, CheckCircle2, Database, FileText, Linkedin, Mail, Repeat, Search, Shield, Target, Users, Wrench, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
@@ -77,6 +77,17 @@ const phases = [
       "Post-engagement support window",
     ],
   },
+  {
+    step: "05",
+    icon: Repeat,
+    title: "Operate",
+    duration: "Optional, month to month",
+    description: "An optional ongoing track for teams whose pipeline keeps evolving with their fleet. We stay on to run and improve it, scoped to your iteration cycle.",
+    outputs: [
+      "Continuous engineering against your iteration cycle",
+      "Optional path into our managed platform as it matures",
+    ],
+  },
 ];
 
 const principles = [
@@ -143,7 +154,7 @@ export default function About() {
                 The founder has built infrastructure at Meta, Isomorphic Labs (Alphabet), and Booking.com - petabyte-scale data platforms, systems handling 100M+ queries per second, ML observability, and GDPR compliance at scale.
               </p>
               <p>
-                We apply that experience to teams building physical AI systems - robotics, autonomous systems, and embodied AI - helping them move from incident to validated change with less manual work. Fixed outcome. Defined handover. Your team operates and extends what we built.
+                We apply that experience to teams building physical AI systems - robotics, autonomous systems, and embodied AI - helping them move from incident to validated change with less manual work. Fixed outcome, with a clean handover when that's the goal - or ongoing engineering when the pipeline needs to keep evolving with you.
               </p>
               <Link
                 to="/solutions"
@@ -286,7 +297,7 @@ export default function About() {
               Let's scope an outcome
             </h2>
             <p className="mt-4 text-muted-foreground">
-              We'll discuss your infrastructure challenges and define a specific result. Typical engagements run 6-12 weeks.
+              We'll discuss your infrastructure challenges and define a specific result. Typical engagements run 6-12 weeks, with an optional month-to-month operate track after that.
             </p>
             <Button asChild size="lg" className="mt-8">
               <a

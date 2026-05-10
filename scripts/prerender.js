@@ -24,12 +24,15 @@ const routes = [
 async function prerender() {
   console.log('Starting pre-rendering...');
 
-  // Start a preview server
+  // Start a preview server. Vite will fall back to another port if 3000 is in
+  // use, so resolve the actual URL it bound to instead of assuming 3000.
   const server = await preview({
     preview: { port: 3000, open: false },
   });
 
-  console.log('Preview server started on port 3000');
+  const previewUrl = server.resolvedUrls?.local?.[0]?.replace(/\/$/, '')
+    ?? 'http://localhost:3000';
+  console.log(`Preview server started on ${previewUrl}`);
 
   // Read the SPA shell once for use as fallback
   const spaShell = await fs.readFile(path.join(distPath, 'index.html'), 'utf-8');
@@ -71,7 +74,7 @@ async function prerender() {
       });
 
       try {
-        await page.goto(`http://localhost:3000${route}`, {
+        await page.goto(`${previewUrl}${route}`, {
           waitUntil: 'networkidle0',
           timeout: 30000,
         });

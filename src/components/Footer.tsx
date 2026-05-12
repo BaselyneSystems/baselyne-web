@@ -6,7 +6,6 @@ import logo from "@/assets/baselyne-logo.jpg";
 const navigation = {
   main: [
     { name: "Solutions", href: "/solutions" },
-    { name: "Blog", href: "/blog" },
     { name: "About", href: "/about" },
     { name: "Contact", href: "/contact" },
   ],

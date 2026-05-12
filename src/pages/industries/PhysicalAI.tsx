@@ -141,9 +141,6 @@ export default function PhysicalAI() {
                   <ArrowRight className="h-4 w-4" />
                 </a>
               </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link to="/blog">See Our Work</Link>
-              </Button>
             </div>
           </div>
         </div>
@@ -302,23 +299,6 @@ export default function PhysicalAI() {
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Blog Link */}
-      <section className="bg-layer-2 py-16 lg:py-20">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="text-muted-foreground">
-              Technical case studies covering data infrastructure, MLOps, and AI systems.
-            </p>
-            <Button asChild variant="outline" size="lg" className="mt-6">
-              <Link to="/blog" className="inline-flex items-center gap-2">
-                Read the Blog
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </Button>
           </div>
         </div>
       </section>

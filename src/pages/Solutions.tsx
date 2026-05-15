@@ -1,4 +1,4 @@
-import { ArrowRight, Database, Filter, FlaskConical, Repeat, Rocket, ShieldCheck } from "lucide-react";
+import { ArrowRight, Bot, ClipboardCheck, Cloud, Database, Factory, Filter, FlaskConical, Lock, Repeat, Rocket, ScanLine, ShieldCheck, Truck } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -329,14 +329,63 @@ export default function Solutions() {
               Teams we work with
             </p>
             <p className="mt-3 text-base text-muted-foreground">
-              Companies building AI for the physical world - across autonomous fleets (trucking, AV, last-mile), industrial automation (warehouse, construction, manufacturing, agriculture), inspection systems (energy, utilities, drones), and general-purpose robotics (humanoid, manipulation, foundation labs). Each vertical hits the iteration loop at different points; scope reflects the specific bottleneck you're working against.
+              Companies building AI for the physical world.
             </p>
           </div>
+          <div className="mx-auto mt-10 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            <Card className="border-border/50 bg-card">
+              <CardContent className="p-6">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                  <Truck className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="mt-4 font-semibold text-foreground">Autonomous fleets</h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Trucking, AV, last-mile delivery.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-border/50 bg-card">
+              <CardContent className="p-6">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                  <Factory className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="mt-4 font-semibold text-foreground">Industrial automation</h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Warehouse, construction, manufacturing, agriculture.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-border/50 bg-card">
+              <CardContent className="p-6">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                  <ScanLine className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="mt-4 font-semibold text-foreground">Inspection systems</h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Energy, utilities, drones.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-border/50 bg-card">
+              <CardContent className="p-6">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                  <Bot className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="mt-4 font-semibold text-foreground">General-purpose robotics</h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Humanoid, manipulation, foundation labs.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+          <p className="mx-auto mt-8 max-w-3xl text-center text-sm text-muted-foreground">
+            Each vertical hits the iteration loop at different points; scope reflects the specific bottleneck you're working against.
+          </p>
         </div>
       </section>
 
       {/* Pricing guide */}
-      <section className="bg-layer-1 py-16 lg:py-20">
+      <section className="bg-layer-1 pt-16 lg:pt-20">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-5xl">
             <div className="mx-auto max-w-2xl text-center">
@@ -362,9 +411,86 @@ export default function Solutions() {
         </div>
       </section>
 
-      {/* Scoped engagements as vertical sections */}
-      {solutions.map((solution, index) => (
-        <SolutionSection key={solution.title} solution={solution} alt={index % 2 === 1} />
+      {/* Deployment principle */}
+      <section className="bg-layer-1 pt-16 lg:pt-20">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-medium uppercase tracking-wider text-primary">
+              Runs in your cloud, by default
+            </p>
+            <p className="mt-3 text-base text-muted-foreground">
+              Deploys into your cloud account - not ours. Fleet data, model artifacts, and audit logs stay where they are generated. Not an enterprise upsell - it is how the platform is built.
+            </p>
+          </div>
+          <div className="mx-auto mt-10 grid max-w-5xl gap-6 md:grid-cols-3">
+            <Card className="border-border/50 bg-card">
+              <CardContent className="p-6">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                  <Cloud className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="mt-4 font-semibold text-foreground">Your cloud, your IAM</h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Deployed into your AWS, GCP, or Azure account against your existing roles and policies. We never see your buckets.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-border/50 bg-card">
+              <CardContent className="p-6">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                  <Lock className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="mt-4 font-semibold text-foreground">Your data stays in your perimeter</h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Fleet data, episodes, model artifacts, and audit logs stay where they are generated. Your raw data never leaves your perimeter - only operational signals if you choose an Operate engagement.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-border/50 bg-card">
+              <CardContent className="p-6">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                  <ClipboardCheck className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="mt-4 font-semibold text-foreground">Compliance evidence stays yours</h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Lineage, access logs, and decision traces live in your account, queryable by your own auditors against your existing systems.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Engagements intro */}
+      <section className="bg-layer-1 pt-16 lg:pt-20">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-medium uppercase tracking-wider text-primary">
+              Engagements
+            </p>
+            <p className="mt-3 text-base text-muted-foreground">
+              Whether you want the whole loop closed end-to-end, or a single stage scoped tight - here is how we work.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Flagship: closed-loop */}
+      <SolutionSection solution={solutions[0]} alt={false} />
+
+      {/* Single-stage divider */}
+      <section className="bg-layer-1 py-10 lg:py-12">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-medium uppercase tracking-wider text-primary">
+              Or scope a single stage
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Single-stage engagements */}
+      {solutions.slice(1).map((solution, index) => (
+        <SolutionSection key={solution.title} solution={solution} alt={index % 2 === 0} />
       ))}
 
       {/* Bottom CTA */}

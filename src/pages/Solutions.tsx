@@ -358,9 +358,6 @@ export default function Solutions() {
                 </Card>
               ))}
             </div>
-            <p className="mx-auto mt-6 max-w-3xl text-center text-sm text-muted-foreground">
-              Design partnerships are scoped separately when there is strong mutual learning and a path to a reusable product.
-            </p>
           </div>
         </div>
       </section>

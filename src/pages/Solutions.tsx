@@ -1,4 +1,4 @@
-import { ArrowRight, Database, Filter, FlaskConical, Lightbulb, Rocket, ShieldCheck, Target } from "lucide-react";
+import { ArrowRight, Database, Filter, FlaskConical, Rocket, ShieldCheck } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -16,48 +16,6 @@ type Solution = {
   dontDo: string[];
   ctaLabel: string;
   painQuote?: string;
-};
-
-const advisorySprint: Solution = {
-  stage: "ADVISORY",
-  duration: "2 weeks",
-  price: "From £5k",
-  icon: Lightbulb,
-  title: "Advisory Sprint",
-  audience:
-    "For teams who want focused senior input on a specific infrastructure question - lighter than a full Assessment, more structured than a scoping call.",
-  outcome:
-    "A written decision memo with concrete recommendations and rationale, ready to share with your team or board.",
-  build: [
-    "3 scheduled discussion sessions of 90 minutes with your team",
-    "Offline research and analysis between sessions",
-    "Written observations after each session",
-    "Final decision memo with prioritised recommendations",
-  ],
-  dontDo: [
-    "Implement technical fixes - advisory only",
-    "Replace a full Assessment if what you need is systematic bottleneck diagnosis",
-  ],
-  ctaLabel: "Book an advisory sprint",
-};
-
-const entryPoint: Solution = {
-  stage: "ASSESSMENT",
-  duration: "2-3 weeks",
-  price: "From £10k",
-  icon: Target,
-  title: "Find what's actually slowing you down",
-  audience: "For teams who want a sharp outside view of where their iteration cycle breaks, with a structured diagnostic.",
-  outcome:
-    "Walk away with a bottleneck map, dollar cost per bottleneck, and a prioritised path to fix them. Specific recommendations tied to your stack - not platitudes.",
-  build: [
-    "Bottleneck map - where your cycle time is actually going",
-    "Cost of each bottleneck (cycle time, engineering hours, GPU waste)",
-    "Prioritized recommendations with estimated impact",
-    "Scoped follow-on engagement options, if you want them",
-  ],
-  dontDo: ["Implement fixes in this engagement - diagnostic only"],
-  ctaLabel: "Start with an assessment",
 };
 
 const solutions: Solution[] = [
@@ -213,65 +171,6 @@ const pricingTiers = [
   },
 ];
 
-function SolutionCard({ solution, highlighted = false }: { solution: Solution; highlighted?: boolean }) {
-  const Icon = solution.icon;
-  return (
-    <Card className={`h-full ${highlighted ? "border-primary/40 bg-primary/5" : "border-border/50 bg-card"}`}>
-      <CardContent className="flex h-full flex-col gap-5 p-6">
-        <div className="flex items-center justify-between text-xs font-medium uppercase tracking-wider">
-          <span className="text-primary">{solution.stage}</span>
-          <span className="text-muted-foreground">{solution.duration} · {solution.price}</span>
-        </div>
-        <div className="flex items-start gap-4">
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
-            <Icon className="h-5 w-5 text-primary" />
-          </div>
-          <div>
-            <h3 className="text-xl font-semibold text-foreground">{solution.title}</h3>
-            <p className="mt-2 text-sm italic text-muted-foreground">{solution.audience}</p>
-          </div>
-        </div>
-        <p className="text-sm font-medium text-foreground">{solution.outcome}</p>
-        <div>
-          <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">What we build</p>
-          <ul className="mt-2 space-y-1.5">
-            {solution.build.map((item) => (
-              <li key={item} className="flex gap-2 text-sm text-muted-foreground">
-                <span className="text-primary">•</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div>
-          <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">What we don't do</p>
-          <ul className="mt-2 space-y-1.5">
-            {solution.dontDo.map((item) => (
-              <li key={item} className="flex gap-2 text-sm text-muted-foreground">
-                <span className="text-muted-foreground/60">•</span>
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="mt-auto">
-          <Button asChild className="w-fit">
-            <a
-              href="https://calendly.com/achyuthsamudrala/30min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2"
-            >
-              {solution.ctaLabel}
-              <ArrowRight className="h-4 w-4" />
-            </a>
-          </Button>
-        </div>
-      </CardContent>
-    </Card>
-  );
-}
-
 function SolutionSection({ solution, alt = false }: { solution: Solution; alt?: boolean }) {
   const Icon = solution.icon;
   return (
@@ -415,21 +314,6 @@ export default function Solutions() {
             <p className="mt-3 text-base text-muted-foreground">
               Companies building AI for the physical world - across autonomous fleets (trucking, AV, last-mile), industrial automation (warehouse, construction, manufacturing, agriculture), inspection systems (energy, utilities, drones), and general-purpose robotics (humanoid, manipulation, foundation labs). Each vertical hits the iteration loop at different points; scope reflects the specific bottleneck you're working against.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Entry point cards */}
-      <section className="bg-layer-1 pt-16 lg:pt-20">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="mx-auto max-w-5xl">
-            <p className="text-center text-sm font-medium uppercase tracking-wider text-primary">
-              Start with a lighter entry point
-            </p>
-            <div className="mt-6 grid gap-6 md:grid-cols-2">
-              <SolutionCard solution={advisorySprint} highlighted />
-              <SolutionCard solution={entryPoint} highlighted />
-            </div>
           </div>
         </div>
       </section>

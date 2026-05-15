@@ -1,4 +1,4 @@
-import { ArrowRight, Database, Filter, FlaskConical, Rocket, ShieldCheck } from "lucide-react";
+import { ArrowRight, Database, Filter, FlaskConical, Repeat, Rocket, ShieldCheck } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -6,7 +6,6 @@ import { SEO } from "@/components/SEO";
 
 type Solution = {
   stage: string;
-  duration: string;
   price: string;
   icon: typeof Database;
   title: string;
@@ -20,8 +19,29 @@ type Solution = {
 
 const solutions: Solution[] = [
   {
+    stage: "CLOSED LOOP",
+    price: "Customized scope",
+    icon: Repeat,
+    title: "Close the loop, tailored to your stack",
+    audience:
+      "For teams who want the whole iteration loop built end-to-end, customized to your fleet, stack, and constraints - not stitched together stage by stage.",
+    outcome:
+      "A working closed-loop learning system in production: capture, principled retention, eval-gated deploy, and outcome trace - with the operator workflow layer (oncall queues, weekly review feeds, blooper reels) that holds it together. Built around your stack, not over the top of it.",
+    build: [
+      "Silent-failure detection - outcome divergence and cross-episode drift, not just edge classifiers",
+      "Principled retention scoring - heuristic, classifier, novelty, and eval-disagreement signals per episode (no random 1% sampling)",
+      "Unified observability and curation - every observability event is a curation signal, one backend, one query",
+      "Operator workflow layer - oncall queues, weekly review feeds, automated blooper reels, payback-prioritised triage",
+      "Versioned slice library - content-addressed, ad-hoc slicing by failure mode, SKU, or site, tied to model versions",
+    ],
+    dontDo: [
+      "Replace your training stack - we integrate over it",
+      "Boil the ocean - sequenced by which gap hurts most in your stack first",
+    ],
+    ctaLabel: "Discuss a closed-loop build",
+  },
+  {
     stage: "CAPTURE",
-    duration: "6–8 weeks",
     price: "Pilot or buildout",
     icon: Database,
     title: "Make your fleet data usable",
@@ -44,7 +64,6 @@ const solutions: Solution[] = [
   },
   {
     stage: "CURATE",
-    duration: "4–6 weeks",
     price: "Pilot",
     icon: Filter,
     title: "Train on what actually matters",
@@ -65,7 +84,6 @@ const solutions: Solution[] = [
   },
   {
     stage: "EXPERIMENT",
-    duration: "6–8 weeks",
     price: "Pilot or buildout",
     icon: FlaskConical,
     title: "Know which model is better, before you ship it",
@@ -90,7 +108,6 @@ const solutions: Solution[] = [
   },
   {
     stage: "SHIP",
-    duration: "6–8 weeks",
     price: "Pilot or buildout",
     icon: Rocket,
     title: "Stop regressed models from reaching your fleet",
@@ -113,7 +130,6 @@ const solutions: Solution[] = [
   },
   {
     stage: "TRACE",
-    duration: "6–10 weeks",
     price: "Buildout",
     icon: ShieldCheck,
     title: "Answer 'why did the robot do that?' in seconds",

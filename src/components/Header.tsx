@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import logo from "@/assets/baselyne-logo.jpg";
 
 const navigation = [
   { name: "Home", href: "/", badge: null },
@@ -19,8 +18,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <nav className="container mx-auto flex h-16 items-center justify-between px-4 lg:px-8">
-        <Link to="/" className="flex items-center gap-3">
-          <img src={logo} alt="Baselyne Systems" className="h-10 w-10 rounded-lg" />
+        <Link to="/" className="flex items-center">
           <span className="text-xl font-semibold text-foreground">Baselyne Systems</span>
         </Link>
 

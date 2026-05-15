@@ -257,7 +257,10 @@ export default function PhysicalAI() {
           </div>
           <div className="mx-auto mt-12 max-w-2xl text-center">
             <p className="text-muted-foreground">
-              Each capability maps to a fixed-scope engagement.{" "}
+              Everything we build runs in your cloud. Your data never leaves your perimeter.
+            </p>
+            <p className="mt-3 text-muted-foreground">
+              Scope the whole loop, or a single stage.{" "}
               <Link to="/solutions" className="inline-flex items-center gap-1 font-medium text-primary hover:underline">
                 See our engagements
                 <ArrowRight className="h-4 w-4" />

@@ -26,17 +26,18 @@ const solutions: Solution[] = [
     audience:
       "For teams who want the whole iteration loop built end-to-end, customized to your fleet, stack, and constraints - not stitched together stage by stage.",
     outcome:
-      "A working closed-loop learning system in production: capture, principled retention, eval-gated deploy, and outcome trace - with the operator workflow layer (oncall queues, weekly review feeds, blooper reels) that holds it together. Built around your stack, not over the top of it.",
+      "A working closed-loop learning system in production: capture, principled retention, eval-gated deploy, and outcome trace - with the operator workflow layer (oncall queues, weekly review feeds, failure triage) that holds it together. Built around your stack, not over the top of it.",
     build: [
-      "Silent-failure detection - outcome divergence and cross-episode drift, not just edge classifiers",
-      "Principled retention scoring - heuristic, classifier, novelty, and eval-disagreement signals per episode (no random 1% sampling)",
-      "Unified observability and curation - every observability event is a curation signal, one backend, one query",
-      "Operator workflow layer - oncall queues, weekly review feeds, automated blooper reels, payback-prioritised triage",
-      "Versioned slice library - content-addressed, ad-hoc slicing by failure mode, SKU, or site, tied to model versions",
+      "Fleet data captured and queryable across every robot, in the format it arrives",
+      "Episodes scored and retained by signal - failure, novelty, eval disagreement - not random sampling",
+      "Every training run tracked, reproducible, and head-to-head comparable on the same eval",
+      "Automated eval gating and canary rollout with rollback on regression",
+      "Every robot action traceable back to the data and model that produced it",
+      "The connecting tissue - production failures auto-feed the eval set, retraining queue, and operator review",
     ],
     dontDo: [
       "Replace your training stack - we integrate over it",
-      "Boil the ocean - sequenced by which gap hurts most in your stack first",
+      "Boil the ocean - sequenced by which stage needs it most first",
     ],
     ctaLabel: "Discuss a closed-loop build",
   },

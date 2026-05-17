@@ -121,11 +121,12 @@ const solutions: Solution[] = [
     build: [
       "Config-driven eval pipeline with statistical comparison",
       "Regression suite that grows from production failures",
+      "Sim eval gates - run your existing simulator before promoting to fleet",
       "Canary deployment with per-robot version management",
       "Automatic rollback on eval regression",
     ],
     dontDo: [
-      "Build simulation environments from scratch - we integrate with your existing sim or offline eval on real data",
+      "Build a physics engine - we integrate with your existing sim",
     ],
     ctaLabel: "Discuss deployment gates",
   },

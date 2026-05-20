@@ -220,39 +220,13 @@ export default function PhysicalAI() {
               What We Build
             </p>
             <h2 className="mt-3 text-3xl font-semibold text-foreground sm:text-4xl">
-              Every robot interaction should become training signal
+              Infrastructure for the full physical AI lifecycle
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Most teams capture it badly. We build the missing layer — fleet learning ops — across three pillars: data, models, fleet.
+              We build the layer that closes the loop, across three pillars: data, models, fleet.
             </p>
           </div>
-          <div className="mx-auto mt-10 max-w-5xl">
-            <div className="flex flex-col items-stretch gap-2 rounded-lg border border-border/50 bg-layer-1 p-4 sm:p-6 lg:flex-row lg:items-center lg:gap-2">
-              {[
-                { stage: "CAPTURE", label: "failure logs" },
-                { stage: "CURATE", label: "cluster / label" },
-                { stage: "EXPERIMENT", label: "retrain policy" },
-                { stage: "SHIP", label: "sim + real eval, safe rollout" },
-                { stage: "TRACE", label: "monitor regressions" },
-              ].flatMap((step, idx, arr) => {
-                const node = (
-                  <div key={step.stage} className="flex-1 text-center">
-                    <p className="text-xs font-medium uppercase tracking-wider text-primary">{step.stage}</p>
-                    <p className="mt-1 text-xs text-muted-foreground">{step.label}</p>
-                  </div>
-                );
-                if (idx === arr.length - 1) return [node];
-                return [
-                  node,
-                  <ArrowRight
-                    key={`arrow-${idx}`}
-                    className="mx-auto h-4 w-4 shrink-0 rotate-90 text-muted-foreground/40 lg:rotate-0"
-                  />,
-                ];
-              })}
-            </div>
-          </div>
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+          <div className="mt-16 grid gap-6 lg:grid-cols-3">
             {pillars.map((pillar) => (
               <Card key={pillar.name} className="border-border/50 bg-card">
                 <CardContent className="flex flex-col gap-6 p-6">

@@ -226,7 +226,7 @@ export default function Blog() {
                   Physical AI Infra Newsletter
                 </h3>
                 <p className="mt-2 text-muted-foreground">
-                  Monthly writing on physical AI infrastructure — what's required today, where existing tools fall short, and how the stack might evolve.
+                  Monthly writing on physical AI infrastructure - what's required today, where existing tools fall short, and how the stack might evolve.
                 </p>
                 <Button asChild size="lg" className="mt-6">
                   <a

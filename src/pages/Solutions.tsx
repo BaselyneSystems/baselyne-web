@@ -468,9 +468,38 @@ export default function Solutions() {
             <p className="text-sm font-medium uppercase tracking-wider text-primary">
               Engagements
             </p>
-            <p className="mt-3 text-base text-muted-foreground">
-              Five stages in the iteration loop. Most teams enter where they are stuck - and scope from there.
+            <h2 className="mt-3 text-2xl font-semibold text-foreground sm:text-3xl">
+              Every robot interaction should become training signal
+            </h2>
+            <p className="mt-4 text-base text-muted-foreground">
+              Most teams capture it badly. We build the fleet learning ops layer across five stages of the iteration loop. Most teams enter where they are stuck, and scope from there.
             </p>
+          </div>
+          <div className="mx-auto mt-10 max-w-5xl">
+            <div className="flex flex-col items-stretch gap-2 rounded-lg border border-border/50 bg-card p-4 sm:p-6 lg:flex-row lg:items-center lg:gap-2">
+              {[
+                { stage: "CAPTURE", label: "failure logs" },
+                { stage: "CURATE", label: "cluster / label" },
+                { stage: "EXPERIMENT", label: "retrain policy" },
+                { stage: "SHIP", label: "sim + real eval, safe rollout" },
+                { stage: "TRACE", label: "monitor regressions" },
+              ].flatMap((step, idx, arr) => {
+                const node = (
+                  <div key={step.stage} className="flex-1 text-center">
+                    <p className="text-xs font-medium uppercase tracking-wider text-primary">{step.stage}</p>
+                    <p className="mt-1 text-xs text-muted-foreground">{step.label}</p>
+                  </div>
+                );
+                if (idx === arr.length - 1) return [node];
+                return [
+                  node,
+                  <ArrowRight
+                    key={`arrow-${idx}`}
+                    className="mx-auto h-4 w-4 shrink-0 rotate-90 text-muted-foreground/40 lg:rotate-0"
+                  />,
+                ];
+              })}
+            </div>
           </div>
         </div>
       </section>
@@ -502,7 +531,7 @@ export default function Solutions() {
               Don't see the right fit?
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Book a scoping call — we'll walk through your pipeline and scope whatever makes sense.
+              Book a scoping call - we'll walk through your pipeline and scope whatever makes sense.
             </p>
             <Button asChild size="lg" className="mt-8">
               <a

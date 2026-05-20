@@ -469,7 +469,7 @@ export default function Solutions() {
               Engagements
             </p>
             <h2 className="mt-3 text-2xl font-semibold text-foreground sm:text-3xl">
-              Every robot interaction should become training signal
+              Every fleet interaction should become training signal
             </h2>
             <p className="mt-4 text-base text-muted-foreground">
               Most teams capture it badly. We adapt our fleet learning ops foundations across five stages of the iteration loop. Most teams enter where they are stuck, and scope from there.
@@ -520,7 +520,7 @@ export default function Solutions() {
               </svg>
               <div className="absolute left-1/2 top-1/2 w-28 -translate-x-1/2 -translate-y-1/2 text-center">
                 <p className="text-xs font-medium uppercase tracking-wider text-primary">Deployed Fleet</p>
-                <p className="mt-1 text-[10px] leading-tight text-muted-foreground">every interaction is signal</p>
+                <p className="mt-1 text-[10px] leading-tight text-muted-foreground">every fleet interaction is signal</p>
               </div>
               {[
                 { stage: "CAPTURE", label: "failure logs", left: 50, top: 7.5 },

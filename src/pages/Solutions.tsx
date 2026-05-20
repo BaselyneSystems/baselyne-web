@@ -43,7 +43,7 @@ const solutions: Solution[] = [
   },
   {
     stage: "CAPTURE",
-    price: "Pilot or buildout",
+    price: "Pilot or deployment",
     icon: Database,
     title: "Make your fleet data usable",
     painQuote:
@@ -85,7 +85,7 @@ const solutions: Solution[] = [
   },
   {
     stage: "EXPERIMENT",
-    price: "Pilot or buildout",
+    price: "Pilot or deployment",
     icon: FlaskConical,
     title: "Know which model is better, before you ship it",
     painQuote:
@@ -109,7 +109,7 @@ const solutions: Solution[] = [
   },
   {
     stage: "SHIP",
-    price: "Pilot or buildout",
+    price: "Pilot or deployment",
     icon: Rocket,
     title: "Stop regressed models from reaching your fleet",
     painQuote:
@@ -132,7 +132,7 @@ const solutions: Solution[] = [
   },
   {
     stage: "TRACE",
-    price: "Buildout",
+    price: "Deployment",
     icon: ShieldCheck,
     title: "Answer 'why did the robot do that?' in seconds",
     painQuote:
@@ -170,13 +170,13 @@ const pricingTiers = [
       "A structured map of the current infrastructure gap and prioritized fixes.",
   },
   {
-    name: "Pilot build",
+    name: "Pilot deployment",
     price: "Typically £25k–£75k",
     description:
       "One focused workflow with a defined outcome and handover path.",
   },
   {
-    name: "Production buildout",
+    name: "Production deployment",
     price: "Scoped after pilot",
     description:
       "Larger integrations across data, training, deployment, or fleet systems.",
@@ -223,7 +223,7 @@ function SolutionSection({ solution, alt = false }: { solution: Solution; alt?: 
 
           <div className="mt-8 grid gap-8 md:grid-cols-2">
             <div>
-              <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">What we build</p>
+              <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">What we deploy</p>
               <ul className="mt-3 space-y-2">
                 {solution.build.map((item) => (
                   <li key={item} className="flex gap-2 text-sm text-muted-foreground">
@@ -281,10 +281,10 @@ export default function Solutions() {
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-medium uppercase tracking-wider text-primary">Solutions</p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-              Where you are, what we build
+              Where you are, what we adapt
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
-              Fixed-scope engagements for the physical AI iteration loop. Each stage is a standalone engagement - enter at the one that matches your current bottleneck, not necessarily the beginning.
+              We adapt our platform foundations to each stage of the iteration loop. Each stage is a standalone engagement, enter at the one that matches your current bottleneck, not necessarily the beginning.
             </p>
             <Button asChild size="lg" className="mt-10">
               <a
@@ -472,7 +472,7 @@ export default function Solutions() {
               Every robot interaction should become training signal
             </h2>
             <p className="mt-4 text-base text-muted-foreground">
-              Most teams capture it badly. We build the fleet learning ops layer across five stages of the iteration loop. Most teams enter where they are stuck, and scope from there.
+              Most teams capture it badly. We adapt our fleet learning ops foundations across five stages of the iteration loop. Most teams enter where they are stuck, and scope from there.
             </p>
           </div>
           <div className="mx-auto mt-10 max-w-5xl">

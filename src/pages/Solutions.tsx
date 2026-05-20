@@ -281,7 +281,7 @@ export default function Solutions() {
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-medium uppercase tracking-wider text-primary">Solutions</p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-              Where you are, what we adapt
+              Engagements across the iteration loop
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
               We adapt our platform foundations to each stage of the iteration loop. Each stage is a standalone engagement, enter at the one that matches your current bottleneck, not necessarily the beginning.
@@ -475,30 +475,69 @@ export default function Solutions() {
               Most teams capture it badly. We adapt our fleet learning ops foundations across five stages of the iteration loop. Most teams enter where they are stuck, and scope from there.
             </p>
           </div>
-          <div className="mx-auto mt-10 max-w-5xl">
-            <div className="flex flex-col items-stretch gap-2 rounded-lg border border-border/50 bg-card p-4 sm:p-6 lg:flex-row lg:items-center lg:gap-2">
+          <div className="mx-auto mt-12 w-full max-w-md sm:max-w-lg">
+            <div className="relative aspect-square w-full">
+              <svg viewBox="0 0 400 400" className="absolute inset-0 h-full w-full" aria-hidden="true">
+                <circle
+                  cx="200"
+                  cy="200"
+                  r="140"
+                  fill="none"
+                  stroke="hsl(var(--primary))"
+                  strokeOpacity="0.35"
+                  strokeWidth="2"
+                  strokeDasharray="6 5"
+                />
+                <circle
+                  cx="200"
+                  cy="200"
+                  r="55"
+                  fill="hsl(var(--primary))"
+                  fillOpacity="0.05"
+                  stroke="hsl(var(--primary))"
+                  strokeOpacity="0.3"
+                  strokeWidth="1"
+                />
+                {[-54, 18, 90, 162, 234].map((angleDeg) => {
+                  const rad = (angleDeg * Math.PI) / 180;
+                  const x = 200 + 140 * Math.cos(rad);
+                  const y = 200 + 140 * Math.sin(rad);
+                  const tangent = angleDeg + 90;
+                  return (
+                    <g key={angleDeg} transform={`translate(${x} ${y}) rotate(${tangent})`}>
+                      <path
+                        d="M -7 -5 L 0 0 L -7 5"
+                        fill="none"
+                        stroke="hsl(var(--primary))"
+                        strokeOpacity="0.7"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </g>
+                  );
+                })}
+              </svg>
+              <div className="absolute left-1/2 top-1/2 w-28 -translate-x-1/2 -translate-y-1/2 text-center">
+                <p className="text-xs font-medium uppercase tracking-wider text-primary">Deployed Fleet</p>
+                <p className="mt-1 text-[10px] leading-tight text-muted-foreground">every interaction is signal</p>
+              </div>
               {[
-                { stage: "CAPTURE", label: "failure logs" },
-                { stage: "CURATE", label: "cluster / label" },
-                { stage: "EXPERIMENT", label: "retrain policy" },
-                { stage: "SHIP", label: "sim + real eval, safe rollout" },
-                { stage: "TRACE", label: "monitor regressions" },
-              ].flatMap((step, idx, arr) => {
-                const node = (
-                  <div key={step.stage} className="flex-1 text-center">
-                    <p className="text-xs font-medium uppercase tracking-wider text-primary">{step.stage}</p>
-                    <p className="mt-1 text-xs text-muted-foreground">{step.label}</p>
-                  </div>
-                );
-                if (idx === arr.length - 1) return [node];
-                return [
-                  node,
-                  <ArrowRight
-                    key={`arrow-${idx}`}
-                    className="mx-auto h-4 w-4 shrink-0 rotate-90 text-muted-foreground/40 lg:rotate-0"
-                  />,
-                ];
-              })}
+                { stage: "CAPTURE", label: "failure logs", left: 50, top: 7.5 },
+                { stage: "CURATE", label: "cluster / label", left: 90.4, top: 36.9 },
+                { stage: "EXPERIMENT", label: "retrain policy", left: 75.0, top: 84.4 },
+                { stage: "SHIP", label: "sim + real eval", left: 25.0, top: 84.4 },
+                { stage: "TRACE", label: "monitor regressions", left: 9.6, top: 36.9 },
+              ].map(({ stage, label, left, top }) => (
+                <div
+                  key={stage}
+                  className="absolute w-24 -translate-x-1/2 -translate-y-1/2 text-center"
+                  style={{ left: `${left}%`, top: `${top}%` }}
+                >
+                  <p className="text-xs font-medium uppercase tracking-wider text-primary">{stage}</p>
+                  <p className="mt-1 text-[10px] leading-tight text-muted-foreground">{label}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>

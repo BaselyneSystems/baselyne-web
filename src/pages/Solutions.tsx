@@ -543,31 +543,12 @@ export default function Solutions() {
         </div>
       </section>
 
-      {/* Single-stage engagements */}
-      {solutions.slice(1).map((solution, index) => (
-        <SolutionSection key={solution.title} solution={solution} alt={index % 2 === 0} />
-      ))}
-
-      {/* Closed-loop divider */}
-      <section className="bg-layer-1 py-10 lg:py-12">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <p className="text-sm font-medium uppercase tracking-wider text-primary">
-              Or close the whole loop end-to-end
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Flagship: closed-loop */}
-      <SolutionSection solution={solutions[0]} alt={false} />
-
       {/* Bottom CTA */}
       <section className="bg-layer-2 py-20 lg:py-28">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-2xl font-semibold text-foreground sm:text-3xl">
-              Don't see the right fit?
+              Find where you're stuck
             </h2>
             <p className="mt-4 text-muted-foreground">
               Book a scoping call - we'll walk through your pipeline and scope whatever makes sense.

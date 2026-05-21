@@ -1,4 +1,5 @@
 import { ArrowRight, Bot, ClipboardCheck, Cloud, Database, Factory, Filter, FlaskConical, Lock, Repeat, Rocket, ScanLine, ShieldCheck, Truck } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -155,39 +156,6 @@ const solutions: Solution[] = [
 ];
 
 const journeyStages = ["Capture", "Curate", "Experiment", "Ship", "Trace"];
-
-const pricingTiers = [
-  {
-    name: "Advisory sprint",
-    price: "From £5k",
-    description:
-      "Focused senior input on architecture, bottlenecks, or technical direction.",
-  },
-  {
-    name: "Diagnostic assessment",
-    price: "From £10k",
-    description:
-      "A structured map of the current infrastructure gap and prioritized fixes.",
-  },
-  {
-    name: "Pilot deployment",
-    price: "Typically £25k–£75k",
-    description:
-      "One focused workflow with a defined outcome and handover path.",
-  },
-  {
-    name: "Production deployment",
-    price: "Scoped after pilot",
-    description:
-      "Larger integrations across data, training, deployment, or fleet systems.",
-  },
-  {
-    name: "Operate",
-    price: "From £6k / month",
-    description:
-      "Continuous engineering to run and evolve the pipeline as your fleet, models, and team grow.",
-  },
-];
 
 function SolutionSection({ solution, alt = false }: { solution: Solution; alt?: boolean }) {
   const Icon = solution.icon;
@@ -385,32 +353,6 @@ export default function Solutions() {
         </div>
       </section>
 
-      {/* Pricing guide */}
-      <section className="bg-layer-1 pt-16 lg:pt-20">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="mx-auto max-w-5xl">
-            <div className="mx-auto max-w-2xl text-center">
-              <p className="text-sm font-medium uppercase tracking-wider text-primary">
-                Typical starting points
-              </p>
-              <p className="mt-3 text-base text-muted-foreground">
-                Pricing depends on scope, access, and how much of the surrounding infrastructure already exists.
-              </p>
-            </div>
-            <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
-              {pricingTiers.map((tier) => (
-                <Card key={tier.name} className="border-border/50 bg-card">
-                  <CardContent className="p-5">
-                    <h3 className="font-semibold text-foreground">{tier.name}</h3>
-                    <p className="mt-2 text-sm font-medium text-primary">{tier.price}</p>
-                    <p className="mt-3 text-sm text-muted-foreground">{tier.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Deployment principle */}
       <section className="bg-layer-1 pt-16 lg:pt-20">
@@ -564,6 +506,13 @@ export default function Solutions() {
                 <ArrowRight className="h-4 w-4" />
               </a>
             </Button>
+            <p className="mt-6 text-sm text-muted-foreground">
+              Curious about cost?{" "}
+              <Link to="/pricing" className="inline-flex items-center gap-1 font-medium text-primary hover:underline">
+                See pricing
+                <ArrowRight className="h-3 w-3" />
+              </Link>
+            </p>
           </div>
         </div>
       </section>

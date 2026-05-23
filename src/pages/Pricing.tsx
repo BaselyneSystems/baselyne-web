@@ -9,31 +9,31 @@ const pricingTiers = [
     name: "Advisory sprint",
     price: "From £5k",
     description:
-      "Focused senior input on architecture, bottlenecks, or technical direction.",
+      "Focused senior input on architecture and bottlenecks, with a view to which platform foundations would apply to your stack.",
   },
   {
     name: "Diagnostic assessment",
     price: "From £10k",
     description:
-      "A structured map of the current infrastructure gap and prioritized fixes.",
+      "A structured map of your infrastructure gap and a prioritised plan for which platform foundations to deploy first.",
   },
   {
     name: "Pilot deployment",
     price: "Typically £25k–£75k",
     description:
-      "One focused workflow with a defined outcome and handover path.",
+      "One platform foundation deployed and adapted to your stack, with a defined outcome and handover path.",
   },
   {
     name: "Production deployment",
     price: "Scoped after pilot",
     description:
-      "Larger integrations across data, training, deployment, or fleet systems.",
+      "Multiple platform foundations adapted across data, training, deployment, or fleet systems.",
   },
   {
     name: "Operate",
     price: "From £6k / month",
     description:
-      "Continuous engineering to run and evolve the pipeline as your fleet, models, and team grow.",
+      "Continuous engineering to run and evolve the deployed platform foundations as your fleet, models, and team grow.",
   },
 ];
 
@@ -56,7 +56,7 @@ export default function Pricing() {
               Typical starting points
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
-              Pricing depends on scope, access, and how much of the surrounding infrastructure already exists. Most engagements start narrow and expand as the loop closes.
+              We adapt our platform foundations to your stack and your use case. Configured and integrated, rather than built from scratch. Pricing depends on scope, access, and how much infrastructure already exists; most engagements start narrow and expand as the loop closes around your fleet.
             </p>
           </div>
         </div>

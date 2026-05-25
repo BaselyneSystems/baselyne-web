@@ -252,7 +252,7 @@ export default function Solutions() {
               Engagements across the iteration loop
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
-              We adapt our platform foundations to each stage of the iteration loop. Each stage is a standalone engagement, enter at the one that matches your current bottleneck, not necessarily the beginning.
+              Scoped engineering services that adapt our platform foundations to each stage of the iteration loop. Each engagement is standalone; enter at the stage that matches your current bottleneck, not necessarily the beginning.
             </p>
             <Button asChild size="lg" className="mt-10">
               <a

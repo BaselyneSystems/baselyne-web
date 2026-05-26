@@ -15,6 +15,7 @@ import TrainingPipeline from "./pages/blog/TrainingPipeline";
 import PhysicalAI from "./pages/industries/PhysicalAI";
 import Solutions from "./pages/Solutions";
 import Pricing from "./pages/Pricing";
+import Landing from "./pages/Landing";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,7 +28,7 @@ const App = () => (
       <BrowserRouter basename="/">
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<PhysicalAI />} />
+          <Route path="/" element={<Landing />} />
           <Route path="/physical-ai" element={<PhysicalAI />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/pricing" element={<Pricing />} />

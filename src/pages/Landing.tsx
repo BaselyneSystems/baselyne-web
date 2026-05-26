@@ -7,8 +7,8 @@ export default function Landing() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <SEO
-        title="Baselyne Systems - AI infrastructure for manufacturing and supply chain"
-        description="AI infrastructure for manufacturing and supply chain operations."
+        title="Baselyne Systems - AI systems for manufacturing and supply chain"
+        description="AI systems for manufacturing and supply chain operations."
         canonical="https://baselynesystems.com/"
       />
 
@@ -24,7 +24,7 @@ export default function Landing() {
         <div className="container mx-auto px-4 py-20 lg:px-8 lg:py-28">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-              AI infrastructure for manufacturing and supply chain.
+              AI systems for manufacturing and supply chain.
             </h1>
             <p className="mt-8 text-base text-muted-foreground">
               By a founder who has built ML infrastructure at Meta, Isomorphic Labs (Alphabet), and Booking.com - petabyte-scale data platforms and model serving at 100M+ QPS.

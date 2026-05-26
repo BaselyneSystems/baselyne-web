@@ -27,7 +27,7 @@ export default function Landing() {
               Data platforms for manufacturing and supply chain.
             </h1>
             <p className="mt-8 text-base text-muted-foreground">
-              By a founder who has built petabyte-scale data platforms and ML systems serving 100M+ QPS at Meta, Alphabet, and Booking.com.
+              By a founder who has built petabyte-scale data platforms and AI systems serving 100M+ QPS at Meta, Alphabet, and Booking.com.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
               {[

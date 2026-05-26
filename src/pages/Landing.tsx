@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Globe, Lock, Network, Server, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
@@ -29,7 +29,27 @@ export default function Landing() {
             <p className="mt-8 text-base text-muted-foreground">
               By a founder who has built petabyte-scale data platforms and ML systems serving 100M+ QPS at Meta, Alphabet, and Booking.com.
             </p>
-            <div className="mt-12">
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
+              {[
+                { icon: ShieldCheck, label: "SOC 2" },
+                { icon: Lock, label: "HIPAA" },
+                { icon: Globe, label: "GDPR" },
+                { icon: Network, label: "Private Link" },
+                { icon: Server, label: "On-prem" },
+              ].map(({ icon: Icon, label }) => (
+                <span
+                  key={label}
+                  className="inline-flex items-center gap-2 rounded-lg border border-border/60 bg-card px-3 py-2 text-xs font-medium uppercase tracking-wider text-muted-foreground"
+                >
+                  <Icon className="h-4 w-4 text-primary" />
+                  {label}
+                </span>
+              ))}
+            </div>
+            <p className="mx-auto mt-4 max-w-2xl text-xs text-muted-foreground/70">
+              Architected for SOC 2, HIPAA, and GDPR compliance. Private Link and on-prem deployment supported.
+            </p>
+            <div className="mt-10">
               <Button asChild size="lg">
                 <a
                   href="https://calendly.com/achyuthsamudrala/30min"

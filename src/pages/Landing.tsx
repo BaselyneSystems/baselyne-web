@@ -27,7 +27,7 @@ export default function Landing() {
               AI infrastructure for manufacturing and supply chain.
             </h1>
             <p className="mt-8 text-base text-muted-foreground">
-              By a founder who has built ML infrastructure at Meta, Isomorphic Labs (Alphabet), and Booking.com - petabyte-scale data platforms, model serving at 100M+ QPS, and ML observability that cut incident detection from days to seconds.
+              By a founder who has built ML infrastructure at Meta, Isomorphic Labs (Alphabet), and Booking.com - petabyte-scale data platforms and model serving at 100M+ QPS.
             </p>
             <div className="mt-12">
               <Button asChild size="lg">

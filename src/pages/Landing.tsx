@@ -72,7 +72,7 @@ export default function Landing() {
             © {new Date().getFullYear()} Baselyne Systems. Baseline AI Systems Limited, registered in England and Wales.
           </p>
           <p className="mt-2 text-center text-xs text-muted-foreground/70">
-            Newsletter + deeper work:{" "}
+            Newsletter:{" "}
             <a
               href="https://physicalaiinfra.substack.com/"
               target="_blank"

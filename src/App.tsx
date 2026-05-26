@@ -14,7 +14,6 @@ import RobotDataLake from "./pages/blog/RobotDataLake";
 import TrainingPipeline from "./pages/blog/TrainingPipeline";
 import PhysicalAI from "./pages/industries/PhysicalAI";
 import Solutions from "./pages/Solutions";
-import Pricing from "./pages/Pricing";
 import Landing from "./pages/Landing";
 import NotFound from "./pages/NotFound";
 
@@ -31,7 +30,6 @@ const App = () => (
           <Route path="/" element={<PhysicalAI />} />
           <Route path="/physical-ai" element={<PhysicalAI />} />
           <Route path="/solutions" element={<Solutions />} />
-          <Route path="/pricing" element={<Pricing />} />
           <Route path="/landing" element={<Landing />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />

@@ -11,7 +11,6 @@ const routes = [
   '/',
   '/physical-ai',
   '/solutions',
-  '/pricing',
   '/blog/bulkhead',
   '/blog/gatekeeper',
   '/blog/robot-data-lake',

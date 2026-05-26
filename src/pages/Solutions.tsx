@@ -1,5 +1,4 @@
 import { ArrowRight, Bot, ClipboardCheck, Cloud, Database, Factory, Filter, FlaskConical, Lock, Repeat, Rocket, ScanLine, ShieldCheck, Truck } from "lucide-react";
-import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -506,13 +505,6 @@ export default function Solutions() {
                 <ArrowRight className="h-4 w-4" />
               </a>
             </Button>
-            <p className="mt-6 text-sm text-muted-foreground">
-              Curious about cost?{" "}
-              <Link to="/pricing" className="inline-flex items-center gap-1 font-medium text-primary hover:underline">
-                See pricing
-                <ArrowRight className="h-3 w-3" />
-              </Link>
-            </p>
           </div>
         </div>
       </section>

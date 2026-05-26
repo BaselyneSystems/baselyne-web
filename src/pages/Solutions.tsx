@@ -298,40 +298,18 @@ export default function Solutions() {
               Teams we work with
             </p>
             <p className="mt-3 text-base text-muted-foreground">
-              Companies building AI for the physical world.
+              Teams building industrial robotics in production.
             </p>
           </div>
           <div className="mx-auto mt-10 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <Card className="border-border/50 bg-card">
               <CardContent className="p-6">
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                  <Truck className="h-5 w-5 text-primary" />
-                </div>
-                <h3 className="mt-4 font-semibold text-foreground">Autonomous fleets</h3>
-                <p className="mt-2 text-sm text-muted-foreground">
-                  Trucking, AV, last-mile delivery.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-border/50 bg-card">
-              <CardContent className="p-6">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                   <Factory className="h-5 w-5 text-primary" />
                 </div>
-                <h3 className="mt-4 font-semibold text-foreground">Industrial automation</h3>
+                <h3 className="mt-4 font-semibold text-foreground">Manufacturing</h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Warehouse, construction, manufacturing, agriculture.
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-border/50 bg-card">
-              <CardContent className="p-6">
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                  <ScanLine className="h-5 w-5 text-primary" />
-                </div>
-                <h3 className="mt-4 font-semibold text-foreground">Inspection systems</h3>
-                <p className="mt-2 text-sm text-muted-foreground">
-                  Energy, utilities, drones.
+                  Automotive, aerospace, food, pharma, electronics.
                 </p>
               </CardContent>
             </Card>
@@ -340,9 +318,31 @@ export default function Solutions() {
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                   <Bot className="h-5 w-5 text-primary" />
                 </div>
-                <h3 className="mt-4 font-semibold text-foreground">General-purpose robotics</h3>
+                <h3 className="mt-4 font-semibold text-foreground">Warehouse manipulation</h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Humanoid, manipulation, foundation labs.
+                  Picking, packing, sortation, fulfilment.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-border/50 bg-card">
+              <CardContent className="p-6">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                  <Truck className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="mt-4 font-semibold text-foreground">Industrial AMRs</h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Mobile robots on factory floors and in warehouses.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-border/50 bg-card">
+              <CardContent className="p-6">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                  <ScanLine className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="mt-4 font-semibold text-foreground">Quality & inspection</h3>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  Vision-based defect detection on production lines.
                 </p>
               </CardContent>
             </Card>

@@ -11,7 +11,7 @@ const challenges = [
     icon: Database,
     title: "Everything is custom-built because nothing fits",
     description:
-      "Every team we've spoken to - from warehouse automation to construction sites to autonomous kitchens - has built core data infrastructure in-house. Recording catalogs, format converters, training pipelines, evaluation scripts. Not because custom is better, but because nothing on the market fits the physical AI workflow.",
+      "Every team we've spoken to - from manufacturing lines to warehouse fulfilment to industrial AMRs - has built core data infrastructure in-house. Recording catalogs, format converters, training pipelines, evaluation scripts. Not because custom is better, but because nothing on the market fits the industrial robotics workflow.",
   },
   {
     icon: Wifi,
@@ -106,8 +106,8 @@ export default function PhysicalAI() {
   return (
     <Layout>
       <SEO
-        title="Physical AI Infrastructure | Baselyne Systems"
-        description="Infrastructure for physical AI teams focused on safer iteration and rollout. Data, models, fleet. Fixed scope. Defined outcome."
+        title="Physical AI Infrastructure for Industrial Robotics | Baselyne Systems"
+        description="Infrastructure for industrial robotics teams focused on safer iteration and rollout. Manufacturing, warehouse, industrial AMRs, quality inspection. Data, models, fleet. Fixed scope. Defined outcome."
         keywords="physical AI infrastructure, embodied AI infrastructure, physical AI consulting, sensor data pipeline, training data lineage, model evaluation, edge inference, GPU optimization, fixed-outcome AI engagements, robot data lake, autonomous systems data"
         canonical="https://baselynesystems.com/physical-ai"
         structuredData={physicalAIServiceSchema}
@@ -118,7 +118,7 @@ export default function PhysicalAI() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-medium uppercase tracking-wider text-primary">
-              Physical AI Infrastructure
+              Physical AI for Industrial Robotics
             </p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
               Your models are ready to deploy. Your infrastructure isn't.
@@ -192,7 +192,7 @@ export default function PhysicalAI() {
               The same problems from every team we've talked to
             </h2>
             <p className="mt-4 text-muted-foreground">
-              From warehouse automation to autonomous systems to embodied AI research - the
+              From manufacturing automation to warehouse manipulation to industrial AMRs - the
               infrastructure pain is consistent.
             </p>
           </div>

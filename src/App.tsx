@@ -28,10 +28,11 @@ const App = () => (
       <BrowserRouter basename="/">
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Landing />} />
+          <Route path="/" element={<PhysicalAI />} />
           <Route path="/physical-ai" element={<PhysicalAI />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/landing" element={<Landing />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />

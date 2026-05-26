@@ -71,6 +71,18 @@ export default function Landing() {
           <p className="text-center text-xs text-muted-foreground/70">
             © {new Date().getFullYear()} Baselyne Systems. Baseline AI Systems Limited, registered in England and Wales.
           </p>
+          <p className="mt-2 text-center text-xs text-muted-foreground/70">
+            Newsletter + deeper work:{" "}
+            <a
+              href="https://physicalaiinfra.substack.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1 transition-colors hover:text-foreground"
+            >
+              Physical AI Infra
+              <ArrowRight className="h-3 w-3" />
+            </a>
+          </p>
         </div>
       </footer>
     </div>

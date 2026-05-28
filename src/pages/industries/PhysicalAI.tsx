@@ -107,8 +107,8 @@ export default function PhysicalAI() {
     <Layout>
       <SEO
         title="Physical AI Infrastructure for Industrial Robotics | Baselyne Systems"
-        description="Infrastructure for industrial robotics teams focused on safer iteration and rollout. Manufacturing, warehouse, industrial AMRs, quality inspection. Data, models, fleet. Fixed scope. Defined outcome."
-        keywords="physical AI infrastructure, embodied AI infrastructure, physical AI consulting, sensor data pipeline, training data lineage, model evaluation, edge inference, GPU optimization, fixed-outcome AI engagements, robot data lake, autonomous systems data"
+        description="Infrastructure for industrial robotics teams focused on safer iteration and rollout. Manufacturing, warehouse, industrial AMRs, quality inspection. Data, models, fleet."
+        keywords="physical AI infrastructure, embodied AI infrastructure, physical AI consulting, sensor data pipeline, training data lineage, model evaluation, edge inference, GPU optimization, robot data lake, autonomous systems data"
         canonical="https://baselynesystems.com/physical-ai"
         structuredData={physicalAIServiceSchema}
       />
@@ -127,7 +127,7 @@ export default function PhysicalAI() {
               From fleet failure to validated policy update.
             </p>
             <p className="mt-4 text-lg text-muted-foreground">
-              We build the infrastructure to close that loop. Fixed scope. Defined outcome.
+              We build the infrastructure to close that loop.
             </p>
             <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Button asChild size="lg">

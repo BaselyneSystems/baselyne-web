@@ -28,7 +28,7 @@ export default function Contact() {
       <SEO
         title="Contact Baselyne Systems | Physical AI Infrastructure"
         description="Schedule a 30-minute call to discuss a physical AI infrastructure problem."
-        keywords="physical AI consulting, ML infrastructure consultation, physical AI data pipeline, inference optimization, fixed-outcome engagement"
+        keywords="physical AI consulting, ML infrastructure consultation, physical AI data pipeline, inference optimization"
         canonical="https://baselynesystems.com/contact"
       />
       {/* Hero */}

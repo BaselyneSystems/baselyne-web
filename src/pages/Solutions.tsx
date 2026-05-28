@@ -237,7 +237,7 @@ export default function Solutions() {
     <Layout>
       <SEO
         title="Solutions | Baselyne Systems"
-        description="Fixed-scope engagements for physical AI teams - capture, curate, experiment, ship, and trace. Each stage is a standalone engagement."
+        description="Engagements for physical AI teams across the iteration loop - capture, curate, experiment, ship, and trace. Each stage is a standalone engagement."
         keywords="physical AI consulting engagements, robot data infrastructure, training pipeline consulting, eval gates, fleet deployment, audit lineage, iteration velocity"
         canonical="https://baselynesystems.com/solutions"
       />

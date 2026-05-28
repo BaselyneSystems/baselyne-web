@@ -49,10 +49,10 @@ const phases = [
     icon: Target,
     title: "Scope & Outcome",
     duration: "Collaborative",
-    description: "We agree on a specific outcome - for example, reduce data-to-policy cycle time from weeks to days. Fixed scope, fixed timeline, fixed price.",
+    description: "We agree on a specific outcome - for example, reduce data-to-policy cycle time from weeks to days.",
     outputs: [
-      "Defined outcome with measurable success criteria",
-      "Fixed-price proposal with timeline",
+      "Specific outcome with measurable success criteria",
+      "Proposal with timeline",
     ],
   },
   {
@@ -113,8 +113,8 @@ export default function About() {
     <Layout>
       <SEO
         title="About & Approach | Baselyne Systems"
-        description="Founder-led physical AI infrastructure firm focused on safer iteration and rollout for teams deploying autonomy. Fixed-outcome engagements, with experience from Meta, Alphabet, and Booking.com."
-        keywords="AI infrastructure consulting, physical AI consulting, fixed-outcome engagements, ML infrastructure, data engineering"
+        description="Founder-led physical AI infrastructure firm focused on safer iteration and rollout for teams deploying autonomy. Experience from Meta, Alphabet, and Booking.com."
+        keywords="AI infrastructure consulting, physical AI consulting, ML infrastructure, data engineering"
         canonical="https://baselynesystems.com/about"
         structuredData={organizationSchema}
       />
@@ -130,7 +130,7 @@ export default function About() {
               About Baselyne Systems
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
-              Helping physical AI teams shorten the path from field failure to validated update. A founder-led infrastructure firm that takes on hard engineering problems and delivers defined outcomes in fixed timelines.
+              Helping physical AI teams shorten the path from field failure to validated update. A founder-led infrastructure firm that takes on hard engineering problems and ships measurable results.
             </p>
           </div>
         </div>
@@ -148,7 +148,7 @@ export default function About() {
             </h2>
             <div className="mt-8 space-y-6 text-muted-foreground">
               <p>
-                Baselyne Systems builds the infrastructure that closes the iteration loop for physical AI teams - the gap between a production failure and the next validated update. We scope every engagement around a specific, measurable outcome - faster evaluation, cleaner failure data, safer rollout - and deliver it in a fixed timeline at a fixed price.
+                Baselyne Systems builds the infrastructure that closes the iteration loop for physical AI teams - the gap between a production failure and the next validated update. We scope every engagement around a specific, measurable outcome - faster evaluation, cleaner failure data, safer rollout.
               </p>
               <p>
                 The founder has built infrastructure at Meta, Isomorphic Labs (Alphabet), and Booking.com - petabyte-scale data platforms, systems handling 100M+ queries per second, ML observability, and GDPR compliance at scale.
@@ -220,7 +220,7 @@ export default function About() {
               How We Work
             </p>
             <h2 className="mt-3 text-3xl font-semibold text-foreground sm:text-4xl">
-              Fixed-outcome engagements
+              How we engage
             </h2>
             <p className="mt-4 text-muted-foreground">
               You pay for results - a working system your team can operate - not for hours.

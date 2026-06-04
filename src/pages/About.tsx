@@ -130,7 +130,7 @@ export default function About() {
               About Baselyne Systems
             </h1>
             <p className="mt-6 text-lg text-muted-foreground">
-              Helping physical AI teams shorten the path from field failure to validated update. A founder-led infrastructure firm that takes on hard engineering problems and ships measurable results.
+              Helping physical AI teams shorten the path from field failure to validated update. A founder-led engineering firm that builds the data and ML tools to close that loop.
             </p>
           </div>
         </div>

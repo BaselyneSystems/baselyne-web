@@ -137,7 +137,7 @@ export default function PhysicalAI() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2"
                 >
-                  Discuss Your Infrastructure
+                  Discuss your data and AI stack
                   <ArrowRight className="h-4 w-4" />
                 </a>
               </Button>

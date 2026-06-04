@@ -143,10 +143,7 @@ export default function About() {
             <p className="text-sm font-medium uppercase tracking-wider text-primary">
               Background
             </p>
-            <h2 className="mt-3 text-3xl font-semibold text-foreground sm:text-4xl">
-              Built at scale, delivered at your scale
-            </h2>
-            <div className="mt-8 space-y-6 text-muted-foreground">
+            <div className="mt-6 space-y-6 text-muted-foreground">
               <p>
                 Baselyne Systems builds the infrastructure that closes the iteration loop for physical AI teams - the gap between a production failure and the next validated update. We scope every engagement around a specific, measurable outcome - faster evaluation, cleaner failure data, safer rollout.
               </p>

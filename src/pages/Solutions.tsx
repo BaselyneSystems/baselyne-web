@@ -297,7 +297,7 @@ export default function Solutions() {
               Teams we work with
             </p>
             <p className="mt-3 text-base text-muted-foreground">
-              Teams building industrial robotics in production.
+              Teams building industrial automation in production.
             </p>
           </div>
           <div className="mx-auto mt-10 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-4">

@@ -106,8 +106,8 @@ export default function PhysicalAI() {
   return (
     <Layout>
       <SEO
-        title="Physical AI Tools for Industrial Automation | Baselyne Systems"
-        description="Tools for industrial automation teams focused on safer iteration and rollout. Manufacturing, warehouse, industrial AMRs, quality inspection. Data, models, fleet."
+        title="Physical AI Infrastructure for Industrial Automation | Baselyne Systems"
+        description="Infrastructure for industrial automation teams focused on safer iteration and rollout. Manufacturing, warehouse, industrial AMRs, quality inspection. Data, models, fleet."
         keywords="physical AI infrastructure, embodied AI infrastructure, physical AI consulting, sensor data pipeline, training data lineage, model evaluation, edge inference, GPU optimization, robot data lake, autonomous systems data"
         canonical="https://baselynesystems.com/physical-ai"
         structuredData={physicalAIServiceSchema}
@@ -118,7 +118,7 @@ export default function PhysicalAI() {
         <div className="container mx-auto px-4 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <p className="text-sm font-medium uppercase tracking-wider text-primary">
-              Physical AI Tools for Industrial Automation
+              Physical AI Infrastructure for Industrial Automation
             </p>
             <h1 className="mt-4 text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
               Your models are ready to deploy. Your infrastructure isn't.

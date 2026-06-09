@@ -95,7 +95,7 @@ export const professionalServiceSchema = {
   name: "Baselyne Systems",
   url: "https://baselynesystems.com",
   description:
-    "Physical AI infrastructure and consulting for industrial automation teams.",
+    "Physical AI infrastructure and consulting for safer iteration and rollout.",
   priceRange: "$$$",
   areaServed: "Worldwide",
   hasOfferCatalog: {

@@ -1,4 +1,4 @@
-import { ArrowRight, Globe, Lock, Network, Server, ShieldCheck } from "lucide-react";
+import { ArrowRight, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { SEO } from "@/components/SEO";
@@ -7,8 +7,8 @@ export default function Landing() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <SEO
-        title="Baselyne Systems - Data platforms for manufacturing and supply chain"
-        description="Data platforms for manufacturing and supply chain operations."
+        title="Baselyne Systems | Physical AI for industry"
+        description="Physical AI for industry. Bringing AI to manufacturing, warehouses, AMRs, and inspection lines."
         canonical="https://baselynesystems.com/"
       />
 
@@ -24,32 +24,12 @@ export default function Landing() {
         <div className="container mx-auto px-4 py-20 lg:px-8 lg:py-28">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-              Data platforms for manufacturing and supply chain.
+              Physical AI for industry.
             </h1>
-            <p className="mt-8 text-base text-muted-foreground">
-              By a founder who has built petabyte-scale data platforms and AI systems serving 100M+ QPS at Meta, Alphabet, and Booking.com.
+            <p className="mt-8 text-lg text-muted-foreground sm:text-xl">
+              Bringing AI to manufacturing, warehouses, AMRs, and inspection lines.
             </p>
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-3">
-              {[
-                { icon: ShieldCheck, label: "SOC 2" },
-                { icon: Lock, label: "HIPAA" },
-                { icon: Globe, label: "GDPR" },
-                { icon: Network, label: "Private Link" },
-                { icon: Server, label: "On-prem" },
-              ].map(({ icon: Icon, label }) => (
-                <span
-                  key={label}
-                  className="inline-flex items-center gap-2 rounded-lg border border-border/60 bg-card px-3 py-2 text-xs font-medium uppercase tracking-wider text-muted-foreground"
-                >
-                  <Icon className="h-4 w-4 text-primary" />
-                  {label}
-                </span>
-              ))}
-            </div>
-            <p className="mx-auto mt-4 max-w-2xl text-xs text-muted-foreground/70">
-              Architected for SOC 2, HIPAA, and GDPR compliance. Private Link and on-prem deployment supported.
-            </p>
-            <div className="mt-10">
+            <div className="mt-12 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Button asChild size="lg">
                 <a
                   href="https://calendly.com/achyuthsamudrala/30min"
@@ -61,28 +41,40 @@ export default function Landing() {
                   <ArrowRight className="h-4 w-4" />
                 </a>
               </Button>
+              <Button asChild size="lg" variant="outline">
+                <a
+                  href="https://physicalaiinfra.substack.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2"
+                >
+                  Get updates
+                </a>
+              </Button>
             </div>
+            <p className="mt-16 text-sm text-muted-foreground/80">
+              Achyuth Samudrala. ML infrastructure at Meta, Alphabet, Booking.com.
+            </p>
           </div>
         </div>
       </main>
 
       <footer className="border-t border-border/40">
         <div className="container mx-auto px-4 py-6 lg:px-8">
-          <p className="text-center text-xs text-muted-foreground/70">
-            © {new Date().getFullYear()} Baselyne Systems. Baseline AI Systems Limited, registered in England and Wales.
-          </p>
-          <p className="mt-2 text-center text-xs text-muted-foreground/70">
-            Newsletter:{" "}
+          <div className="flex flex-col items-center justify-center gap-3 text-xs text-muted-foreground/70 sm:flex-row sm:justify-between">
+            <p>
+              © {new Date().getFullYear()} Baselyne Systems. Baseline AI Systems Limited, registered in England and Wales.
+            </p>
             <a
-              href="https://physicalaiinfra.substack.com/"
+              href="https://www.linkedin.com/in/achyuthsamudrala/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 transition-colors hover:text-foreground"
+              className="inline-flex items-center gap-2 transition-colors hover:text-foreground"
             >
-              Physical AI Infra
-              <ArrowRight className="h-3 w-3" />
+              <Linkedin className="h-3 w-3" />
+              LinkedIn
             </a>
-          </p>
+          </div>
         </div>
       </footer>
     </div>

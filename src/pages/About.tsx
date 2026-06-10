@@ -151,7 +151,7 @@ export default function About() {
                 The founder has built infrastructure at Meta, Isomorphic Labs (Alphabet), and Booking.com - petabyte-scale data platforms, systems handling 100M+ queries per second, ML observability, and GDPR compliance at scale.
               </p>
               <p>
-                We apply that experience to industrial automation teams - manufacturing, warehouse, AMRs, inspection - helping them move from incident to validated change with less manual work. Clean handover when that's the goal, or ongoing engineering when the pipeline needs to keep evolving with you.
+                We apply that experience to teams bringing AI to industry - manufacturing, warehouse, AMRs, inspection - helping them move from incident to validated change with less manual work. Clean handover when that's the goal, or ongoing engineering when the pipeline needs to keep evolving with you.
               </p>
               <Link
                 to="/solutions"

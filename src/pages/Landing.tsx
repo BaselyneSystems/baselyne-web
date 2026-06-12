@@ -7,8 +7,8 @@ export default function Landing() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <SEO
-        title="Baselyne Systems | Physical AI for industry"
-        description="Physical AI for industry. Bringing AI to manufacturing, warehouses, AMRs, and inspection lines."
+        title="Baselyne Systems | Data and AI for the physical world"
+        description="Data and AI for the physical world. Manufacturing, warehouses, AMRs, inspection lines."
         canonical="https://baselynesystems.com/"
       />
 
@@ -24,10 +24,10 @@ export default function Landing() {
         <div className="container mx-auto px-4 py-20 lg:px-8 lg:py-28">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl">
-              Physical AI for industry.
+              Data and AI for the physical world.
             </h1>
             <p className="mt-8 text-lg text-muted-foreground sm:text-xl">
-              Bringing AI to manufacturing, warehouses, AMRs, and inspection lines.
+              Manufacturing. Warehouses. AMRs. Inspection lines.
             </p>
             <div className="mt-12 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Button asChild size="lg">

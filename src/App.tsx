@@ -27,7 +27,7 @@ const App = () => (
       <BrowserRouter basename="/">
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<PhysicalAI />} />
+          <Route path="/" element={<Landing />} />
           <Route path="/physical-ai" element={<PhysicalAI />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/landing" element={<Landing />} />

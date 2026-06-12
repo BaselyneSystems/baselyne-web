@@ -8,7 +8,7 @@ export default function Landing() {
     <div className="flex min-h-screen flex-col bg-background">
       <SEO
         title="Baselyne Systems | Data and AI for the physical world"
-        description="Data and AI for the physical world. Manufacturing, warehouses, AMRs, inspection lines, robotics."
+        description="Data and AI for the physical world. Manufacturing, warehouses, construction, AMRs, inspection lines, robotics."
         canonical="https://baselynesystems.com/"
       />
 
@@ -27,7 +27,7 @@ export default function Landing() {
               Data and AI for the physical world.
             </h1>
             <p className="mt-8 text-lg text-muted-foreground sm:text-xl">
-              Manufacturing. Warehouses. AMRs. Inspection lines. Robotics.
+              Manufacturing. Warehouses. Construction. AMRs. Inspection lines. Robotics.
             </p>
             <div className="mt-12 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <Button asChild size="lg">

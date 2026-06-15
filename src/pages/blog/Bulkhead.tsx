@@ -159,6 +159,7 @@ export default function Bulkhead() {
         description="How we enforce AI agent guardrails at the infrastructure level, not the prompt level - four independent enforcement layers, kernel-level egress, append-only audit trail, all evaluated in under 50ms."
         keywords="AI agent security, agent guardrails, LLM agent governance, AI infrastructure security, autonomous agent safety, agent sandboxing"
         canonical="https://baselynesystems.com/blog/bulkhead"
+        noIndex
         ogType="article"
         publishedTime="2026-03-07"
         author="Achyuth Samudrala"

@@ -153,6 +153,7 @@ export default function Blog() {
         description="Technical case studies and open-source engineering from Baselyne - physical AI data infrastructure, MLOps, agent governance, and data pipelines."
         keywords="physical AI data infrastructure, robot data lake, AI infrastructure blog, MLOps blog, model deployment, eval pipeline, agent governance, CDC platform, data engineering, open source AI"
         canonical="https://baselynesystems.com/blog"
+        noIndex
       />
 
       {/* Hero */}

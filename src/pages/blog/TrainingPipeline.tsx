@@ -186,6 +186,7 @@ export default function TrainingPipeline() {
         description="How we built a training pipeline for physical AI that traces every model back to its exact training data, compares policy architectures on the same versioned dataset, and registers evaluated models with full reproducibility records."
         keywords="robot policy training, physical AI MLOps, model registry robotics, training data lineage, experiment comparison, reproducible training, robot policy versioning, physical AI training pipeline"
         canonical="https://baselynesystems.com/blog/training-pipeline"
+        noIndex
         ogType="article"
         publishedTime="2026-04-05"
         author="Achyuth Samudrala"

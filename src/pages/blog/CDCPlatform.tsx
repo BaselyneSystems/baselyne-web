@@ -198,6 +198,7 @@ export default function CDCPlatform() {
         description="How we built a modular Python CDC platform achieving 38,647 msg/s - with config-driven tuning, exactly-once delivery, and Iceberg lakehouse support."
         keywords="change data capture, CDC platform, Debezium, Kafka, Apache Iceberg, Python asyncio, open source data pipeline"
         canonical="https://baselynesystems.com/blog/cdc-platform"
+        noIndex
         ogType="article"
         publishedTime="2026-02-01"
         author="Achyuth Samudrala"

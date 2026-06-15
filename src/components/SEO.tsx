@@ -10,6 +10,7 @@ interface SEOProps {
   structuredData?: object;
   publishedTime?: string;
   author?: string;
+  noIndex?: boolean;
 }
 
 const BASE_URL = "https://baselynesystems.com";
@@ -24,6 +25,7 @@ export function SEO({
   structuredData,
   publishedTime,
   author,
+  noIndex = false,
 }: SEOProps) {
   const fullTitle = title.includes("Baselyne")
     ? title
@@ -35,6 +37,7 @@ export function SEO({
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
+      {noIndex && <meta name="robots" content="noindex, nofollow" />}
       <link rel="canonical" href={canonicalUrl} />
 
       {/* Open Graph */}

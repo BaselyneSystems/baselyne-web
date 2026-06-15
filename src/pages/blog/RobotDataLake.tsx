@@ -190,6 +190,7 @@ export default function RobotDataLake() {
         description="How we built a format-agnostic data lake for physical AI - ingesting RLDS, LeRobot, MCAP, and HDF5 into Apache Iceberg tables, making 5,121 episodes across 3 formats queryable via SQL."
         keywords="robot data lake, physical AI data infrastructure, Apache Iceberg robotics, MCAP data pipeline, RLDS ingestion, LeRobot dataset, robot episode storage, open source robot data"
         canonical="https://baselynesystems.com/blog/robot-data-lake"
+        noIndex
         ogType="article"
         publishedTime="2026-04-02"
         author="Achyuth Samudrala"

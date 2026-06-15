@@ -201,6 +201,7 @@ export default function GateKeeper() {
         description="How we built an eval-gated deployment pipeline that blocks bad models before production - with accuracy gates, drift detection, canary traffic, and a full audit trail."
         keywords="MLOps, model deployment, eval pipeline, model evaluation, canary deployment, model registry, ML CI/CD, model monitoring, drift detection, open source MLOps"
         canonical="https://baselynesystems.com/blog/gatekeeper"
+        noIndex
         ogType="article"
         publishedTime="2026-03-23"
         author="Achyuth Samudrala"
